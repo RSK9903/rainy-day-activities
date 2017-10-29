@@ -1,0 +1,178 @@
+
+<!Doctype html>
+<head>
+    <title>Featured</title>
+    <style>
+	#sddm
+	{margin: 0;
+	padding: 0;
+	z-index: 30}
+
+	#sddm li
+	{margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 12px arial}
+
+	#sddm li a
+	{display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 204px;
+	background:rgb(94, 115, 101);
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+	#sddm li a:hover
+	{background:rgb(108, 181, 96)}
+
+	#sddm div
+	{position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: white;
+	border: 1px solid rgb(94, 115, 101)}
+
+	#sddm div a
+	{position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: white;
+		color: rgb(94, 115, 101);
+		font: 12px arial}
+
+	#sddm div a:hover
+	{background:rgb(108, 181, 96); color: #FFF}
+
+	body{font-family:Palatino Linotype; background:rgb(94, 115, 101)}
+	div.all{margin-left:auto; margin-right:auto; margin-top:20px; width:900px; height:1100px; border: black 2px solid; background-color:rgb(212, 233, 208)}
+	div.body{padding:20px 30px 10px 30px;}
+	h1#title{font-size:75px; text-align: center}
+	h2#top{font-size:50px; text-align:center; margin-bottom:-20px}
+	h3.sub{font-size:35px; text-align:center}
+	a#tp:link{color:black; text-decoration:none}
+	a#tp:visited{color:rgb(68, 86, 75); text-decoration:none}
+	a#tp:hover{text-decoration:underline}
+	a#tp:active{text-decoration:underline}
+    </style>
+
+    <script>
+	var timeout	= 500;
+	var closetimer	= 0;
+	var ddmenuitem	= 0;
+
+	// open hidden layer
+	function mopen(id)
+	{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+	}
+	// close showed layer
+	function mclose()
+	{
+	  if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+	}
+
+	// go close timer
+	function mclosetime()
+	{
+	  closetimer = window.setTimeout(mclose, timeout);
+	}
+
+	// cancel close timer
+	function mcancelclosetime()
+	{
+	  if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+	}
+
+	// close layer when click-out
+	document.onclick = mclose; 
+    </script>
+</head>
+
+<body>
+  <div class="all">
+  <div class="title">
+    <h1 id="title"><a id="top">Website Title</a></h1>
+  </div>
+  <div id="dropmenu">
+    <ul id="sddm">
+      <li><a href="#feat" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Featured</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#hero">Heading 1</a>
+        <a href="#cross">Heading 2</a>
+        <a href="#frozen">Heading 3</a>
+		<a href="#lok">Heading 4</a>
+        </div>
+      </li>
+      <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Other HTML Files</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="">Example HTML 1</a>
+        <a href="">Example HTML 2</a>
+        <a href="">Example HTML 3</a>
+        <a href="">Example HTML 4</a>
+        </div>
+      </li>
+      <li><a href="#"
+	onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Outside Links 1</a>
+	<div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="">Link #1</a>
+		<a href="">Link #2</a>
+        <a href="">Link #3</a>
+		<a href="">Link #4</a>
+		<a href="">Link #5</a>
+      </li>
+      <li><a href="#"
+	onmouseover="mopen('m4')" 
+        onmouseout="mclosetime()">Outside Links Two</a>
+	<div id="m4" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="">Link #6</a>
+		<a href="">Link #7</a>
+        <a href="">Link #8</a>
+        <a href="">Link #9</a>
+      </li>
+    </ul>
+  </div>
+  <div class="body">
+    <h2 id="top"><a id="feat">Title</a></h2>
+	<h3 class="sub"><a id="hero">Heading 1</a></h3>
+	<h3 class="sub"><a id="cross">Heading 2</a></h3>
+	<h3 class="sub"><a id="frozen">Heading 3</a><h3>
+	<h3 class="sub"><a id="lok">Heading 4</a></h3>
+  </div>
+  </div>
+</body>
+</html>
