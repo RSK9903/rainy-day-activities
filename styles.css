@@ -6,11 +6,20 @@ td {
     	}
 
 input[type=text] {
-	width: 5vw;
+	width: 7vw;
 	-webkit-transition:width 0.4s ease-in-out;
 	transition: width 0.4s ease-in-out;
 }
 
 input[type=text]:focus {
 	width: 30vw;
+}
+
+form {
+	text-align: right;
+}
+
+#suggestionBox {
+	text-align: center;
+}
 }
