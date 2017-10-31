@@ -12,7 +12,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-	width: 30vw;
+	width: 20vw;
 }
 
 form {
