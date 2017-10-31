@@ -22,4 +22,8 @@ form {
 #suggestionBox {
 	text-align: center;
 }
+
+.logo {
+	text-decoration: none;
+	text-decoration-color: black;
 }
