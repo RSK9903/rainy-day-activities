@@ -11,65 +11,72 @@
 
 <body>
     <header>
-        <h1 id="logo"><a href="./index.html"><img src="./images/cloud.png" alt="A cloud" width="5%" height="5%">IdeaCloud</a></h1>
-        <form>
-            <input type="text" name="search" placeholder="Search...">
-        </form>
-        <hr>
+        <div class="logo">
+            <a href="./index.html">
+                    <img src="./images/cloud.png" alt="A cloud">
+                </a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="./board_games.html">Board Games</a>
+                </li>
+                <li>
+                    <a href="./card_games.html">Card Games</a>
+                </li>
+                <li>
+                    <a href="./activities.html">Activities</a>
+                </li>
+                <li>
+                    <a href="./arts_and_crafts.html">Arts &amp; Crafts</a>
+                </li>
+                <li>
+                    <a href="./productivity.html">Productivity</a>
+                </li>
+                <li>
+                    <a href="./something_new.html">Something New</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
-        <section>
-            <center>
-                <table>
-                    <tr>
-                        <td>
-                            <a href="./board_games.html">
-                                <center><img src="./images/game_icon.png" width="100%" height="100%" title="Board Games"></center>
-                            </a>
-                            <center>Board Games</center>
-                        </td>
-                        <td>
-                            <a href="./card_games.html">
-                                <center><img src="./images/card_icon.png" width="100%" height="100%" title="Card Games"></center>
-                            </a>
-                            <center>Card Games</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="./activities.html">
-                                <center><img src="./images/activities_icon.jpg" width="100%" height="100%" title="Activities"></center>
-                            </a>
-                            <center>Activities</center>
-                        </td>
-                        <td>
-                            <a href="./arts_and_crafts.html">
-                                <center><img src="./images/crafts_icon.png" width="100%" height="100%" title="Arts & Crafts"></center>
-                            </a>
-                            <center>Arts &amp; Crafts</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="./productivity.html">
-                                <center><img src="./images/productivity_icon.png" width="100%" height="100%" title="Productivity"></center>
-                            </a>
-                            <center>Productivity</center>
-                        </td>
-                        <td>
-                            <a href="./something_new.html">
-                                <center><img src="./images/new_icon.png" width="100%" height="100%" title="Something New"></center>
-                            </a>
-                            <center>Something New</center>
-                        </td>
-                    </tr>
-                </table>
-            </center>
+        <section class="categories">
+            <ul>
+                <li><a href="./board_games.html">
+                        <img src="./images/game_icon.png" title="Board Games">
+                        <div>Board Games</div>
+                    </a>
+                </li>
+                <li><a href="./card_games.html">
+                        <img src="./images/card_icon.png" title="Card Games">
+                        <div>Card Games</div>
+                    </a>
+                </li>
+                <li><a href="./activities.html">
+                        <img src="./images/activity_icon.png" title="Activities">
+                        <div>Activities</div>
+                    </a>
+                </li>
+                <li><a href="./arts_and_crafts.html">
+                        <img src="./images/crafts_icon.png" title="Arts & Crafts">
+                        <div>Arts &amp; Crafts</div>
+                    </a>
+                </li>
+                <li><a href="./productivity.html">
+                        <img src="./images/productivity_icon.png" title="Productivity">
+                        <div>Productivity</div>
+                    </a>
+                </li>
+                <li><a href="./something_new.html">
+                        <img src="./images/new_icon.png" title="Something New">
+                        <div>Something New</div>
+                    </a>
+                </li>
+            </ul>
         </section>
-        <hr>
-        <section>
-            <h2><center>Featured</center></h2>
-            <div>
+        <section class="featured">
+            <h2>Featured</h2>
+            <div class="rachel">
                 <h3>Rachel Kim</h3>
                 <ul>
                     <li><strong>Favorite Board Game:</strong> <a href="./board_games.html#gameOfLife">The Game of Life</a></li>
@@ -80,7 +87,7 @@
                     <li><strong>Favorite New Activity:</strong> <a href="./something_new.html#code">Learn to Code</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="nathaniel">
                 <h3>Nathaniel Burgdorfer</h3>
                 <ul>
                     <li><strong>Favorite Board Game:</strong> <a href="./board_games.html#clue">Clue</a></li>
@@ -91,7 +98,7 @@
                     <li><strong>Favorite New Activity:</strong> <a href="./something_new.html#instruments">Learn to Play the Piano</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="lachlan">
                 <h3>Lachlan Mountjoy</h3>
                 <ul>
                     <li><strong>Favorite Board Game:</strong> <a href="./board_games.html#monopoly">Monopoly</a></li>
@@ -102,7 +109,7 @@
                     <li><strong>Favorite New Activity:</strong> <a href="./something_new.html#sysk">Stuff You Should Know</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="elina">
                 <h3>Elina Tuder</h3>
                 <ul>
                     <li><strong>Favorite Board Game:</strong> <a href="./board_games.html#clue">Clue</a></li>
@@ -113,7 +120,7 @@
                     <li><strong>Favorite New Activity:</strong> <a href="./something_new.html#instruments">Learn to Play the Piano</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="shamroz">
                 <h3>Shamroz Shahid</h3>
                 <ul>
                     <li><strong>Favorite Board Game:</strong> <a href="./board_games.html#sorry">Sorry</a></li>
@@ -125,22 +132,25 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <form id="suggestionBox">
-                <input type="text" name="suggestion_box" placeholder="Suggestions?">
-            </form>
-        </section>
-        <hr>
     </main>
     <footer>
-        <div>
-            <i><small><center>
-                <a href="./index.html">Home</a> |
-                <a href="./about.html">About</a> |
-                <a href="./contact_info.html">Contact Us</a> |
-                <a href="./help.html">Help</a> |
-                <a href="./site_map.html">Site Map</a>
-            </center></small></i>
+        <div class="suggestion-box">
+            <form>
+                <input type="text" name="suggestion_box" placeholder="Suggestions?">
+            </form>
+        </div>
+        <div class="foot-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="./about.html">About</a></li>
+                <li>|</li>
+                <li><a href="./contact_info.html">Contact</a></li>
+                <li>|</li>
+                <li><a href="./help.html">Help</a></li>
+                <li>|</li>
+                <li><a href="./site_map.html">Site Map</a></li>
+            </ul>
         </div>
     </footer>
 </body>
