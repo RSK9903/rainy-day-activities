@@ -154,3 +154,60 @@ h1 {
     justify-content: center;
     margin-top: 5%;
 }
+
+/************* CSS for something new *************/
+
+.tableOfContents {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.snImage {
+    width:200px;
+    height: 200px;
+    float:left;
+    border-radius: 10%;
+}
+
+table tr th {
+    padding: 10px 10px 10px 10px;
+}
+
+.SYSK {
+    display: flex;
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+}
+
+#TSN {
+    margin-top: -10px;
+}
+
+.description {
+    margin: 30px 10px 10px 10px;
+}
+.podcasts {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.learnToCode {
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-bottom: 1px solid black;
+
+}
+.instrument {
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-bottom: 1px solid black; 
+}
+.intro {
+    width: 350px;
+    margin-top:5px;
+    margin-bottom: 20px;
+}
+p {
+    text-align: center;
+}
