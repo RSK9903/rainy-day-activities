@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: sans-serif;
 }
 
 /************* CSS for header *************/
@@ -179,6 +180,11 @@ body {
 
 .featured ul {
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured li {
+    margin: 1em 0 1em 0 ;
 }
 
 .featured ul li a {
@@ -231,6 +237,8 @@ h1 img {
     width: 40px;
     height: 40px;
 }
+
+
 
 /************* CSS for something new *************/
 
