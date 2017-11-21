@@ -84,22 +84,25 @@ footer .foot-nav li a {
 /************* CSS for 'index.html' *************/
 .index,
 .boardGames,
-main .categories,
-main .featured,
-main .featured > div,
-main .featured div .rachel,
-main .featured div .lachlan,
-main .featured div .nathaniel,
-main .featured div .shamroz,
-main .featured div.elina,
-main ul,
-main li,
-section a,
-li a div,
+.index .categories,
+.index .featured,
+.index .featured > div,
+.index .featured div .rachel,
+.index .featured div .lachlan,
+.index .featured div .nathaniel,
+.index .featured div .shamroz,
+.index .featured div.elina,
+.index ul,
+.boardGames ul,
+.index li,
+.boardGames li,
+.featured a,
+.categories a,
+.index li a div,
 .featured a img,
 .categories li a img,
-h3,
-h2,
+.index h3,
+.index h2,
 .featuredNames {
     display: flex;
 }
@@ -238,7 +241,7 @@ h1 img {
     border-radius: 10%;
 }
 
-table tr th {
+.tableOfContents table tr th {
     padding: 10px 10px 10px 10px;
 }
 
