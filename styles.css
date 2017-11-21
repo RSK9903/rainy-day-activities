@@ -162,18 +162,23 @@ body {
 .featured {
     flex-direction: column;
     border-top: solid 1pt black;
+    align-items: center;
 }
 
 .featured div {
     margin-bottom: 2em;
+    width: 100%;
+}
+
+.featured div h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
 }
 
 .featured ul {
     justify-content: space-around;
-}
-
-.featured ul li {
-    flex-direction: column;
 }
 
 .featured ul li a {
