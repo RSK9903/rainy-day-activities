@@ -82,36 +82,41 @@ footer .foot-nav li a {
 
 
 /************* CSS for 'index.html' *************/
-main,
+.index,
+.boardGames,
 main .categories,
 main .featured,
-main .featured .rachel,
-main .featured .lachlan,
-main .featured .nathaniel,
-main .featured .shamroz,
-main .featured .elina,
+main .featured > div,
+main .featured div .rachel,
+main .featured div .lachlan,
+main .featured div .nathaniel,
+main .featured div .shamroz,
+main .featured div.elina,
 main ul,
 main li,
 section a,
-.categories li a div {
+li a div,
+.featured a img,
+.categories li a img,
+h3,
+h2,
+.featuredNames {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 body {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(240, 250, 255);
 }
 
-main {
-    margin-top: 1em;
+.index, .boardGames {
+    margin: 1em;
     padding: 1em;
+    flex-direction: column;
 }
 
-main .categories ul li img {
-    width: 250px;
-    height: 250px;
+.index .categories ul li img {
+    width: 240px;
+    height: 240px;
 }
 
 .categories ul {
@@ -126,25 +131,84 @@ main .categories ul li img {
 .categories ul li a {
     text-decoration: none;
     background-color: white;
-    width: 320px;
-    height: 320px;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    align-items: center;
     box-shadow: 5px 5px 5px 2px grey;
+    border-radius: 20px;
 }
 
 .categories ul li a:hover {
-    box-shadow: 0 0 5px 2px rgb(255, 255, 110);
+    box-shadow: 0 0 5px 2px darkblue;
     transform: scale(1.01, 1.01);
     transition: all 0.2s ease-out;
 }
 
-.categories li a div {
-    height: 70px;
+.categories ul li a div {
+    margin-top: 1em;
     background-color: black;
     color: white;
     justify-content: center;
-    align-items: center;
     width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.featured {
+    flex-direction: column;
+    border-top: solid 1pt black;
+}
+
+.featured div {
+    margin-bottom: 2em;
+}
+
+.featured ul {
+    justify-content: space-around;
+}
+
+.featured ul li {
+    flex-direction: column;
+}
+
+.featured ul li a {
+    text-decoration: none;
+    background-color: white;
+    flex-direction: column;
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    box-shadow: 3px 3px 3px 1px grey;
+    border-radius: 10px;
+}
+
+.featured ul li a:hover {
+    box-shadow: 0 0 3px 1px darkblue;
+    transform: scale(1.01, 1.01);
+    transition: all 0.2s ease-out;
+}
+
+.featured a img {
+    width: 160px;
+    height: 120px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+.featured ul li a div {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.featured > div {
+    flex-direction: column;
 }
 
 /************* CSS for board games *************/
@@ -153,6 +217,11 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+}
+
+h1 img {
+    width: 40px;
+    height: 40px;
 }
 
 /************* CSS for something new *************/
@@ -201,7 +270,7 @@ table tr th {
 .instrument {
     padding-top: 20px;
     padding-bottom:20px;
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid black;
 }
 .intro {
     width: 350px;
