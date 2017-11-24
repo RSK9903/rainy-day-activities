@@ -235,7 +235,8 @@ body {
 .boardGames section div h2,
 .boardGames section div p,
 .boardGames section div ul,
-.boardGames section div ul li {
+.boardGames section div ul li,
+.boardGames section div ul a li {
     display: flex;
 }
 
@@ -285,12 +286,22 @@ body {
 
 .boardGames ul li {
     margin: 0 1em 0 1em;
-    background-color: orange;
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: white;
+    box-shadow: 3px 3px 3px 1px grey;
 }
 
-.boardGames ul li a {
+.boardGames ul a {
     text-decoration: none;
     color: black;
+}
+
+.boardGames ul a li:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s ease-out;
+    background-color: limegreen;
 }
 
 /************* CSS for something new *************/
