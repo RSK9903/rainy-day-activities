@@ -226,19 +226,72 @@ body {
 }
 
 /************* CSS for board games *************/
-
-h1 {
+.boardGames,
+.boardGames h1,
+.boardGames h3,
+.boardGames section,
+.boardGames div,
+.boardGames section img,
+.boardGames section div h2,
+.boardGames section div p,
+.boardGames section div ul,
+.boardGames section div ul li {
     display: flex;
+}
+
+.boardGames, .boardGames section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boardGames section {
+    margin: 1em 0 1em 0;
+    border: solid 1pt black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px grey;
+    width: 80%;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boardGames h1 {
     justify-content: center;
     margin-top: 5%;
 }
 
-h1 img {
+
+
+.boardGames h1 img {
     width: 40px;
     height: 40px;
 }
 
+.boardGames section div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.boardGames section img {
+    width: 300px;
+}
+
+.boardGames ul {
+    width: 100%;
+    justify-content: center;
+}
+
+.boardGames ul li {
+    margin: 0 1em 0 1em;
+    background-color: orange;
+}
+
+.boardGames ul li a {
+    text-decoration: none;
+    color: black;
+}
 
 /************* CSS for something new *************/
 
