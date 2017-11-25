@@ -233,10 +233,12 @@ body {
 .boardGames div,
 .boardGames section img,
 .boardGames section div h2,
-.boardGames section div p,
-.boardGames section div ul,
-.boardGames section div ul li,
-.boardGames section div ul a li {
+.boardGames section div div,
+.boardGames section div div ul,
+.boardGames section div div ul li,
+.boardGames section div > ul,
+.boardGames section div > ul li,
+.boardGames section div > ul a li {
     display: flex;
 }
 
@@ -262,14 +264,31 @@ body {
     margin-top: 5%;
 }
 
+.boardGames section div div {
+    margin: 3em;
+    border-top: solid 1pt black;
+    border-bottom: solid 1pt black;
+    text-shadow: 2px 2px 2px grey;
+}
 
+.boardGames section div div ul {
+    flex-direction: column;
+    align-items: center;
+}
+.boardGames section div div ul li {
+    margin: 5px 0 5px 0;
+}
+
+.boardGames section div h2 {
+    justify-content: center;
+}
 
 .boardGames h1 img {
     width: 40px;
     height: 40px;
 }
 
-.boardGames section div {
+.boardGames section > div {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -279,12 +298,12 @@ body {
     width: 300px;
 }
 
-.boardGames ul {
+.boardGames section > div > ul {
     width: 100%;
     justify-content: center;
 }
 
-.boardGames ul li {
+.boardGames section > div > ul li {
     margin: 0 1em 0 1em;
     padding: 1em;
     border-radius: 10px;
@@ -293,12 +312,12 @@ body {
     box-shadow: 3px 3px 3px 1px grey;
 }
 
-.boardGames ul a {
+.boardGames section > div > ul a {
     text-decoration: none;
     color: black;
 }
 
-.boardGames ul a li:hover {
+.boardGames section > div > ul a li:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.4s ease-out;
     background-color: limegreen;
