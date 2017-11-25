@@ -13,7 +13,6 @@ header .nav-links ul,
 header .nav-links li,
 header .nav-links ul li a {
     display: flex;
-    justify-content: flex-start;
 }
 
 header {
@@ -27,7 +26,6 @@ header {
 
 header .logo img {
     margin: .5em;
-    margin-left: 1em;
     width: 50px;
 }
 
@@ -253,7 +251,7 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-    width: 80%;
+    width: 800px;
     height: 400px;
     flex-direction: row;
     justify-content: space-around;
@@ -315,6 +313,7 @@ body {
 .boardGames section > div > ul a {
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .boardGames section > div > ul a li:hover {
@@ -392,4 +391,177 @@ body {
 }
 p {
     text-align: center;
+}
+
+/************* CSS for mobile devices *************/
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    /************* CSS for tablet header *************/
+    header {
+        max-width: 800px;
+        font-size: 12px;
+    }
+
+    header .logo img {
+        margin: 1em;
+        width: 40px;
+    }
+
+    header .nav-links li a {
+        padding: 0 8px;
+    }
+
+    /************* CSS for tablet footer *************/
+    footer .foot-nav li a {
+        font-size: 10px;
+    }
+
+    /************* CSS for tablet index *************/
+    .categories li {
+        margin-bottom: 1em;
+    }
+
+    .categories ul li a {
+        width: 200px;
+        height: 200px;
+    }
+
+    .index .categories ul li img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .categories ul li a div {
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .featured ul li a {
+        width: 100px;
+        height: 100px;
+    }
+
+    .featured a img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .featured ul li a div {
+        width: 100%;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    /************* CSS for tablet board games *************/
+    .boardGames h1 {
+        font-size: 26px;
+    }
+
+    .boardGames h3 {
+        font-size: 16px;
+    }
+
+    .boardGames h1 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .boardGames section {
+        width: 480px;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .boardGames section > div {
+        font-size: 12px;
+    }
+
+    .boardGames section img {
+        width: 160px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    /************* CSS for mobile header *************/
+    header {
+        max-width: 480px;
+        font-size: 10px;
+    }
+
+    header .logo img {
+        margin: 1em;
+        width: 30px;
+    }
+
+    /************* CSS for mobile footer *************/
+    footer .foot-nav li a {
+        font-size: 10px;
+    }
+
+    /************* CSS for mobile index *************/
+    .categories li {
+        margin-bottom: 1em;
+    }
+
+    .categories ul li a {
+        width: 150px;
+        height: 150px;
+    }
+
+    .index .categories ul li img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .categories ul li a div {
+        width: 100%;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .featured ul li a {
+        width: 80px;
+        height: 80px;
+    }
+
+    .featured a img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .featured ul li a div {
+        width: 100%;
+        height: 20px;
+        font-size: 8px;
+    }
+
+    /************* CSS for mobile board games *************/
+    .boardGames h1 {
+        font-size: 20px;
+    }
+
+    .boardGames h3 {
+        font-size: 10px;
+    }
+
+    .boardGames h1 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .boardGames section {
+        width: 280px;
+        height: 350px;
+        flex-direction: column;
+    }
+
+    .boardGames section > div {
+        font-size: 10px;
+    }
+
+    .boardGames section img {
+        width: 140px;
+    }
 }
