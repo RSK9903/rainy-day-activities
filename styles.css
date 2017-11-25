@@ -565,3 +565,121 @@ p {
         width: 140px;
     }
 }
+
+/************* CSS for about page *************/
+.about,
+.about section,
+.about section ul,
+.about ul li {
+    display: flex;
+}
+
+.about {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about section {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.about h2 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.about ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about ul li a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    width: 150px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.about ul li a:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease-out;
+}
+
+/************* CSS for contact page *************/
+.contact,
+.contact div,
+.contact div div,
+.contact div div a {
+    display: flex;
+}
+
+.contact {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h1 {
+    margin-bottom: 1em;
+}
+
+.contact > div {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/************* CSS for help page *************/
+.help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help h1 {
+    font-style: italic;
+}
+
+/************* CSS for site map page *************/
+.map,
+.map section,
+.map div,
+.map div ul,
+.map div ul li,
+.map div ul li a {
+    display: flex;
+}
+
+.map section {
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.map, .map div, .map div ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.map div {
+    margin-bottom: 1em;
+}
+
+.map div ul li a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    width: 200px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.map ul li a:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease-out;
+}
