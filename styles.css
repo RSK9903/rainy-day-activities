@@ -591,6 +591,37 @@ p {
     .boardGames section img {
         width: 160px;
     }
+    
+    /************* CSS for tablet card games *************/
+     .CardGames h1 {
+        font-size: 26px;
+    }
+
+    .CardGames h3 {
+        font-size: 16px;
+    }
+
+    .CardGames h1 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .CardGames section {
+        width: 480px;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .CardGames section > div {
+        font-size: 12px;
+    }
+
+    .CardGames section img {
+        width: 90%;
+        height:100%;
+    }
+    
+    
     /************ CSS for Somrthing new ********************/
     .snImage {
         width:150px;
