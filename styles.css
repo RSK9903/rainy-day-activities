@@ -469,8 +469,8 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-    width: 800px;
-    height: 520px;
+    width: 810px;
+    height: 400px;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -489,7 +489,7 @@ body {
 
 .activities section div div ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .activities section div div ul li {
     margin: 5px 0 5px 0;
@@ -511,7 +511,7 @@ body {
 }
 
 .activities section img {
-    width: 300px;
+    width: 450px;
 }
 
 .activities section > div > ul {
