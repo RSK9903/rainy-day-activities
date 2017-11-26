@@ -1,0 +1,721 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/************* CSS for header *************/
+header,
+header .logo,
+header .logo a
+header .nav-links,
+header .nav-links ul,
+header .nav-links li,
+header .nav-links ul li a {
+    display: flex;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    height: 50px;
+    z-index: 5;
+}
+
+header .logo img {
+    margin: .5em;
+    width: 50px;
+}
+
+header .nav-links li a {
+    align-items: center;
+    padding: 0 12px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    height: 50px;
+}
+
+header .nav-links li a:hover {
+    background-color: grey;
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease-out;
+}
+
+
+/************* CSS for footer *************/
+footer,
+footer .suggestion-box,
+footer .foot-nav,
+footer .foot-nav,
+footer .foot-nav ul,
+footer .foot-nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    margin-bottom: 2%;
+}
+
+footer .foot-nav, footer .foot-nav ul, footer .foot-nav li {
+    flex-direction: row;
+}
+
+footer .foot-nav {
+    border-top: solid 1pt grey;
+    width: 80%;
+    justify-content: center;
+}
+
+footer .foot-nav li {
+}
+
+footer .foot-nav li a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/************* CSS for 'index.html' *************/
+.index,
+.boardGames,
+.index .categories,
+.index .featured,
+.index .featured > div,
+.index .featured div .rachel,
+.index .featured div .lachlan,
+.index .featured div .nathaniel,
+.index .featured div .shamroz,
+.index .featured div.elina,
+.index ul,
+.boardGames ul,
+.index li,
+.boardGames li,
+.featured a,
+.categories a,
+.index li a div,
+.featured a img,
+.categories li a img,
+.index h3,
+.index h2,
+.featuredNames {
+    display: flex;
+}
+
+body {
+    background-color: rgb(240, 250, 255);
+}
+
+.index, .boardGames {
+    margin: 1em;
+    padding: 1em;
+    flex-direction: column;
+}
+
+.index .categories ul li img {
+    width: 240px;
+    height: 240px;
+}
+
+.categories ul {
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.categories li {
+    margin-bottom: 2em;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    background-color: white;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    box-shadow: 5px 5px 5px 2px grey;
+    border-radius: 20px;
+}
+
+.categories ul li a:hover {
+    box-shadow: 0 0 5px 2px darkblue;
+    transform: scale(1.01, 1.01);
+    transition: all 0.2s ease-out;
+}
+
+.categories ul li a div {
+    margin-top: 1em;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.featured {
+    flex-direction: column;
+    border-top: solid 1pt black;
+    align-items: center;
+}
+
+.featured div {
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.featured div h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+}
+
+.featured ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured li {
+    margin: 1em 0 1em 0 ;
+}
+
+.featured ul li a {
+    text-decoration: none;
+    background-color: white;
+    flex-direction: column;
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    box-shadow: 3px 3px 3px 1px grey;
+    border-radius: 10px;
+}
+
+.featured ul li a:hover {
+    box-shadow: 0 0 3px 1px darkblue;
+    transform: scale(1.01, 1.01);
+    transition: all 0.2s ease-out;
+}
+
+.featured a img {
+    width: 160px;
+    height: 120px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+.featured ul li a div {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.featured > div {
+    flex-direction: column;
+}
+
+/************* CSS for board games *************/
+.boardGames,
+.boardGames h1,
+.boardGames h3,
+.boardGames section,
+.boardGames div,
+.boardGames section img,
+.boardGames section div h2,
+.boardGames section div div,
+.boardGames section div div ul,
+.boardGames section div div ul li,
+.boardGames section div > ul,
+.boardGames section div > ul li,
+.boardGames section div > ul a li {
+    display: flex;
+}
+
+.boardGames, .boardGames section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boardGames section {
+    margin: 1em 0 1em 0;
+    border: solid 1pt black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px grey;
+    width: 800px;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boardGames h1 {
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.boardGames section div div {
+    margin: 3em;
+    border-top: solid 1pt black;
+    border-bottom: solid 1pt black;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.boardGames section div div ul {
+    flex-direction: column;
+    align-items: center;
+}
+.boardGames section div div ul li {
+    margin: 5px 0 5px 0;
+}
+
+.boardGames section div h2 {
+    justify-content: center;
+}
+
+.boardGames h1 img {
+    width: 40px;
+    height: 40px;
+}
+
+.boardGames section > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boardGames section img {
+    width: 300px;
+}
+
+.boardGames section > div > ul {
+    width: 100%;
+    justify-content: center;
+}
+
+.boardGames section > div > ul li {
+    margin: 0 1em 0 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: white;
+    box-shadow: 3px 3px 3px 1px grey;
+}
+
+.boardGames section > div > ul a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.boardGames section > div > ul a li:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s ease-out;
+    background-color: limegreen;
+}
+
+/************* CSS for something new *************/
+
+.SN {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SN section {
+    display: flex;
+    text-align: center;
+}
+
+.tableOfContents {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.snImage {
+    width:200px;
+    height: 200px;
+    float:left;
+    border-radius: 10%;
+}
+
+.tableOfContents table tr th {
+    padding: 10px 10px 10px 10px;
+}
+
+.SYSK {
+    display: flex;
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+}
+
+#TSN {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.description {
+    margin: 30px 10px 10px 10px;
+}
+.podcasts {
+    border-top: 1px solid black;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.learnToCode {
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-bottom: 3px solid black;
+
+}
+.instrument {
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.intro {
+    width: 350px;
+    margin-top:5px;
+    margin-bottom: 20px;
+}
+p {
+    text-align: center;
+}
+
+/************* CSS for mobile devices *************/
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    /************* CSS for tablet header *************/
+    header {
+        max-width: 800px;
+        font-size: 12px;
+    }
+
+    header .logo img {
+        margin: 1em;
+        width: 40px;
+    }
+
+    header .nav-links li a {
+        padding: 0 8px;
+    }
+
+    /************* CSS for tablet footer *************/
+    footer .foot-nav li a {
+        font-size: 10px;
+    }
+
+    /************* CSS for tablet index *************/
+    .categories li {
+        margin-bottom: 1em;
+    }
+
+    .categories ul li a {
+        width: 200px;
+        height: 200px;
+    }
+
+    .index .categories ul li img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .categories ul li a div {
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .featured ul li a {
+        width: 100px;
+        height: 100px;
+    }
+
+    .featured a img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .featured ul li a div {
+        width: 100%;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    /************* CSS for tablet board games *************/
+    .boardGames h1 {
+        font-size: 26px;
+    }
+
+    .boardGames h3 {
+        font-size: 16px;
+    }
+
+    .boardGames h1 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .boardGames section {
+        width: 480px;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .boardGames section > div {
+        font-size: 12px;
+    }
+
+    .boardGames section img {
+        width: 160px;
+    }
+    /************ CSS for Somrthing new ********************/
+    .snImage {
+        width:150px;
+        height: 150px;
+    }
+    .description {
+        width:200px;
+        margin: 30px 10px 10px 10px;
+    }
+    .SYSK {
+        width: 400px;
+        }
+    .podcasts {
+        border-bottom: 2px solid black;
+    }
+    .learnToCode {
+        border-bottom: 2px solid black;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /************* CSS for mobile header *************/
+    header {
+        max-width: 480px;
+        font-size: 10px;
+    }
+
+    header .logo img {
+        margin: 1em;
+        width: 30px;
+    }
+
+    /************* CSS for mobile footer *************/
+    footer .foot-nav li a {
+        font-size: 10px;
+    }
+
+    /************* CSS for mobile index *************/
+    .categories li {
+        margin-bottom: 1em;
+    }
+
+    .categories ul li a {
+        width: 150px;
+        height: 150px;
+    }
+
+    .index .categories ul li img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .categories ul li a div {
+        width: 100%;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .featured ul li a {
+        width: 80px;
+        height: 80px;
+    }
+
+    .featured a img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .featured ul li a div {
+        width: 100%;
+        height: 20px;
+        font-size: 8px;
+    }
+    /************* CSS for Something New ******************/
+    .snImage {
+        width:100px;
+        height: 100px;
+        align-content: center;
+    }
+    .description {
+        width:230px;
+        margin: 20px 5px 5px 10px;
+        text-align: center;
+    }
+    .SYSK {
+        width: 400px;
+        }
+    .podcasts {
+        border-bottom: 1px solid black;
+    }
+    .learnToCode {
+        border-bottom: 1px solid black;
+    }
+    /************* CSS for mobile board games *************/
+    .boardGames h1 {
+        font-size: 20px;
+    }
+
+    .boardGames h3 {
+        font-size: 10px;
+    }
+
+    .boardGames h1 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .boardGames section {
+        width: 280px;
+        height: 350px;
+        flex-direction: column;
+    }
+
+    .boardGames section > div {
+        font-size: 10px;
+    }
+
+    .boardGames section img {
+        width: 140px;
+    }
+}
+
+/************* CSS for about page *************/
+.about,
+.about section,
+.about section ul,
+.about ul li {
+    display: flex;
+}
+
+.about {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about section {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.about h2 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.about ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about ul li a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    width: 150px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.about ul li a:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease-out;
+}
+
+/************* CSS for contact page *************/
+.contact,
+.contact div,
+.contact div div,
+.contact div div a {
+    display: flex;
+}
+
+.contact {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h1 {
+    margin-bottom: 1em;
+}
+
+.contact > div {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/************* CSS for help page *************/
+.help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help h1 {
+    font-style: italic;
+}
+
+/************* CSS for site map page *************/
+.map,
+.map section,
+.map div,
+.map div ul,
+.map div ul li,
+.map div ul li a {
+    display: flex;
+}
+
+.map section {
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.map, .map div, .map div ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.map div {
+    margin-bottom: 1em;
+}
+
+.map div ul li a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    width: 200px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.map ul li a:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease-out;
+}
