@@ -436,6 +436,115 @@ body {
     background-color: limegreen;
 } */
 
+
+/************* CSS for Activities *************/
+
+
+.activities,
+.activities h1,
+.activities h3,
+.activities section,
+.activities div,
+.activities section img,
+.activities section div h2,
+.activities section div div,
+.activities section div div ul,
+.activities section div div ul li,
+.activities section div > ul,
+.activities section div > ul li,
+.activities section div > ul a li {
+    display: flex;
+}
+
+.activities{
+    display: flex;
+}
+
+.activities, .activities section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.activities section {
+    margin: 1em 0 1em 0;
+    border: solid 1pt black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px grey;
+    width: 800px;
+    height: 520px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.activities h1 {
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.activities section div div {
+    margin: 3em;
+    border-top: solid 1pt black;
+    border-bottom: solid 1pt black;
+    text-shadow: 2px 2px 2px lightgrey;
+}
+
+.activities section div div ul {
+    flex-direction: column;
+    align-items: center;
+}
+.activities section div div ul li {
+    margin: 5px 0 5px 0;
+}
+
+.activities section div h2 {
+    justify-content: center;
+}
+
+.activities h1 img {
+    width: 40px;
+    height: 40px;
+}
+
+.activities section > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.activities section img {
+    width: 300px;
+}
+
+.activities section > div > ul {
+    width: 100%;
+    justify-content: center;
+}
+
+.activities section > div > ul li {
+    margin: 0 1em 0 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: white;
+    box-shadow: 3px 3px 3px 1px grey;
+}
+
+.activities section > div > ul a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.activities section > div > ul a li:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s ease-out;
+    background-color: lightgrey;
+}
+
+
+
+
 /************* CSS for something new *************/
 
 .SN {
