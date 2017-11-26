@@ -226,19 +226,83 @@ body {
 }
 
 /************* CSS for board games *************/
-
-h1 {
+.boardGames,
+.boardGames h1,
+.boardGames h3,
+.boardGames section,
+.boardGames div,
+.boardGames section img,
+.boardGames section div h2,
+.boardGames section div p,
+.boardGames section div ul,
+.boardGames section div ul li,
+.boardGames section div ul a li {
     display: flex;
+}
+
+.boardGames, .boardGames section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boardGames section {
+    margin: 1em 0 1em 0;
+    border: solid 1pt black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px grey;
+    width: 80%;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boardGames h1 {
     justify-content: center;
     margin-top: 5%;
 }
 
-h1 img {
+
+
+.boardGames h1 img {
     width: 40px;
     height: 40px;
 }
 
+.boardGames section div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.boardGames section img {
+    width: 300px;
+}
+
+.boardGames ul {
+    width: 100%;
+    justify-content: center;
+}
+
+.boardGames ul li {
+    margin: 0 1em 0 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: white;
+    box-shadow: 3px 3px 3px 1px grey;
+}
+
+.boardGames ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.boardGames ul a li:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s ease-out;
+    background-color: limegreen;
+}
 
 /************* CSS for something new *************/
 
@@ -277,6 +341,7 @@ h1 img {
 
 #TSN {
     margin-top: 10px;
+    text-align: center;
 }
 
 .description {
@@ -309,4 +374,80 @@ h1 img {
 }
 p {
     text-align: center;
+}
+@media only screen and (max-width: 800px) {
+.SN {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SN section {
+    display: flex;
+    text-align: center;
+}
+
+.tableOfContents {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.snImage {
+    width:200px;
+    height: 200px;
+    float:left;
+    border-radius: 10%;
+}
+
+.tableOfContents table tr th {
+    padding: 10px 10px 10px 10px;
+}
+
+.SYSK {
+    display: flex;
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+}
+
+#TSN {
+    margin-top: 10px;
+    text-align: center;
+}
+/*-------------------------------------------------*/
+.description {
+    background-color:red;
+    margin: 30px 10px 10px 10px;
+}
+.podcasts {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.learnToCode {
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-bottom: 1px solid black;
+
+}
+.instrument {
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-bottom: 1px solid black;
+}
+.intro {
+    width: 350px;
+    margin-top:5px;
+    margin-bottom: 20px;
+}
+    p {
+
+    }
+@media only screen and (max-width: 400px) {
+    .SYSK {
+        background-color: red;
+    }   
 }
