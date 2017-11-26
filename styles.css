@@ -696,7 +696,7 @@ p {
         height: 20px;
         font-size: 8px;
     }
-     /************* CSS for mobile card games *************/
+/************* CSS for mobile card games *************/
     .CardGames h1, h2 {
         font-size: 20px;
     }
@@ -727,7 +727,11 @@ p {
     .CardGames section > div >ul>li {
         height:90%;
         width:30%;
-        display:inline-block;
+        display:block;
+        margin:auto;
+        margin-top:5px;
+        margin-bottom:15px;
+        
         
     }
     .CardGames section img, ul, li {
@@ -736,6 +740,7 @@ p {
         justify-content:center;
     }
 }
+
     /************* CSS for Something New ******************/
     .snImage {
         width:100px;
@@ -785,7 +790,7 @@ p {
     }
 }
 
-/************* CSS for mobile card games *************/
+
     
 
 /************* CSS for about page *************/
