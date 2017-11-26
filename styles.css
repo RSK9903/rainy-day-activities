@@ -322,6 +322,120 @@ body {
     background-color: limegreen;
 }
 
+/************* CSS for card games *************/
+
+/*.CardGames,
+.CardGames h1,
+.CardGames h3,
+.CardGames section,
+.CardGames div,
+.CardGames section img,
+.CardGames section div h2,
+.CardGames section div div,
+.CardGames section div div ul,
+.CardGames section div div ul li,
+.CardGames section div > ul,
+.CardGames section div > ul li,
+.CardGames section div > ul a li {
+    display: flex;
+} */
+
+.CardGames main, .CardGames h1, .CardGames h3, .CardGames table, .CardGames h2, .CardGames bs{
+    display:flex;
+    justify-content: center;
+}
+.CardGames main, .CardGames h1, .CardGames table{
+   margin-top:5%; 
+}
+
+.CardGames, .CardGames section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.bs, .gofish, .oldmaid, .rummy, .spades, .solitaire, .spit, .war, .blackjack, .poker, .uno{
+    margin: 1em 0 1em 0;
+    border: solid 1pt black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px grey;
+    width: 800px;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+
+.CardGames h1 {
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.CardGames h2 {
+    margin-top:2%;
+}
+
+.description {
+    margin: 3em;
+    border-top: solid 1pt black;
+    border-bottom: solid 1pt black;
+    text-shadow: 2px 2px 2px grey;
+    
+}
+
+.CardGames section div div ul {
+    flex-direction: column;
+    align-items: center;
+}
+.CardGames section div div ul li {
+    margin: 5px 0 5px 0;
+}
+
+.CardGames section div h2 {
+    justify-content: center;
+}
+
+.CardGames h1 img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.CardGames section > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CardGames section img {
+    width: 300px;
+}
+
+.CardGames section > div > ul {
+    width: 100%;
+    justify-content: center;
+}
+
+.CardGames section > div > ul li {
+    margin: 0 1em 0 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: white;
+    box-shadow: 3px 3px 3px 1px grey;
+}
+
+.CardGames section > div > ul a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.CardGames section > div > ul a li:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s ease-out;
+    background-color: limegreen;
+} */
+
 /************* CSS for something new *************/
 
 .SN {
