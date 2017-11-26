@@ -419,6 +419,7 @@ body {
     border: solid 1px black;
     background-color: white;
     box-shadow: 3px 3px 3px 1px grey;
+    height:50%;
 }
 
 .CardGames section > div > ul a {
@@ -695,6 +696,46 @@ p {
         height: 20px;
         font-size: 8px;
     }
+     /************* CSS for mobile card games *************/
+    .CardGames h1, h2 {
+        font-size: 20px;
+    }
+
+    .CardGames h3 {
+        font-size: 10px;
+    }
+
+    .CardGames h1 img {
+        width: 20px;
+        height: 70px;
+    }
+
+    .CardGames section, ul, li {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .CardGames section > div {
+        font-size: 10px;
+    }
+    
+    .CardGames section{
+        text-align: center;
+    }
+    .CardGames section > div >ul>li {
+        height:90%;
+        width:30%;
+        display:inline-block;
+        
+    }
+    .CardGames section img, ul, li {
+        width: 80%;
+        height: 60%;
+        justify-content:center;
+    }
+}
     /************* CSS for Something New ******************/
     .snImage {
         width:100px;
@@ -743,6 +784,9 @@ p {
         width: 140px;
     }
 }
+
+/************* CSS for mobile card games *************/
+    
 
 /************* CSS for about page *************/
 .about,
