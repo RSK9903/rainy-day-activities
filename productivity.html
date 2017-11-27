@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <title>Productivity</title>
+    <link rel="stylesheet" type="text/css" href="styles_arts.css">    
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -38,12 +39,11 @@
             </ul>
         </div>
     </header>
-    <main>
-        <section>
-            <h1><img src="images/productivity_icon.png" height="5%" width="5%">
-	Productivity <img src="images/productivity_icon.png" height="5%" width="5%"></h1>
+        <section id="title">
+            <h1><img src="images/productivity_icon.png">
+    Productivity <img src="images/productivity_icon.png"></h1>
             <h3>Seize the day and get your chores done!</h3>
-            <table>
+        <!--    <table>
                 <tr>
                     <th>Table of Contents</th>
                 </tr>
@@ -53,6 +53,7 @@
                 <tr>
                     <td><a href="#laundry">Laundry</a></td>
                 </tr>
+    
                 <tr>
                     <td><a href="#cooking">Cooking</a></td>
                 </tr>
@@ -65,74 +66,69 @@
                 <tr>
                     <td><a href="#money">Manage Money</a></td>
                 </tr>
-            </table>
+            </table>-->
         </section>
-        <section>
-            <table>
-                <!--Will be changed into a dropdown menu later-->
-                <tr>
-                    <th colspan="7">Other Categories</th>
-                </tr>
-                <tr>
-                    <td><a href="board_games.html">Board Games</a></td>
-                    <td><a href="card_games.html">Card Games</a></td>
-                    <td><a href="activities.html">Activities</a></td>
-                    <td><a href="arts_and_crafts.html">Arts &amp; Crafts</a></td>
-                    <td><a href="Productivity.html">Productivity</a></td>
-                    <td><a href="something_new.html">Something New</a></td>
-                </tr>
-            </table>
-        </section>
+        <main class="arts" id="pro">
         <section>
             <h2 id="cleaning">Clean your room</h2>
             <p>A clean room means that you will actually know where your things are. As a result, you will be more organized and able to accomplish other tasks in a shorter amount of time.</p>
             <h3>Tips</h3>
-            <ul>
+            <ul id="outer">
                 <li>Prioritize. Which mess stands out the most? Deal with that first.</li>
                 <li>Put things back where they belong.</li>
-                <li>Put back any clothes that are out.
-                    <br>Fold them <i>neatly</i>; don't just shove them back in.</li>
+                <li>Put back any clothes that are out.</li>
+                    <ul id="inner">
+                        <li>Fold them neatly; don't just shove them back in.</li>
+                    </ul>
                 <li>Get rid of any food, especially ones that have already perished.</li>
-                <li>Dust, dust, dust.
-                    <br>We recommend using a Swiffer Duster but a sock on your hand will do just fine in picking up dust.</li>
-                <li>Vacuum the floor or use something like a Swiffer Sweeper
-                    <br>Swiffers are the best. Seriously. Get one. Now.</li>
-                <li>Don't get sidetracked!
-                    <br>Sometimes while cleaning you can get distracted when finding things you hadn't seen in a long time. This can significantly increase the time you spend "cleaning". Stay focused!</li>
+                <li>Dust, dust, dust.</li>
+                    <ul id="inner">
+                        <li>We recommend using a Swiffer Duster but a sock on your hand will do just fine in picking up dust.</li>
+                    </ul>
+                <li>Vacuum the floor or use something like a Swiffer Sweeper.</li>
+                    <ul id="inner">
+                        <li>Swiffers are the best. Seriously. Get one. Now.</li>
+                    </ul>
+                <li>Don't get sidetracked!</li>
+                    <ul id="inner">
+                        <li>Sometimes while cleaning you can get distracted when finding things you hadn't seen in a long time. This can significantly increase the time you spend "cleaning". Stay focused!</li>
+                    </ul>
             </ul>
             <figure>
                 <img src="images/cleaning.jpg" alt="Cleaning Meme" title="Don't be like this.">
                 <figcaption>Let's not get sidetracked.</figcaption>
             </figure>
-            <a href="#top">Back to Top</a>
-            <hr>
+            <p id="bttop"><a href="#top">Back to Top</a></p>
         </section>
+            <br>
         <section>
             <h2 id="laundry">Laundry</h2>
             <p>Take out your dirty laundry, bring in your clean laundry. This needs to get done eventually, so might as well do it now rather than letting it pile up.</p>
             <h3>Tips</h3>
-            <ul>
+            <ul id="outer">
                 <li>Make a habit of doing your laundry once a week, maaaaybe once in two weeks. Pick a designated "laundry" day.</li>
                 <li>If managing your own washing machine or dryer, make sure you are stocked in detergents and softeners.</li>
                 <li>If sharing washing machines/dryers with others, be considerate of their needs and watch the clock.</li>
                 <li>Immediately after taking your clothes out of the dryer, remove the clothes that tend to wrinkle (usually pants, dress shirts, certain long-sleeve shirts) and smooth them out. This prevents them from wrinkling.</li>
                 <li>Separate your colors from your whites.</li>
-                <li>Be mindful of the washing instructions found on your clothing labels.
-                    <br> If it says to wash in cold water, DO IT. Warm water? DO IT. This can save your clothes.</li>
+                <li>Be mindful of the washing instructions found on your clothing labels.</li>
+                    <ul id="inner">
+                        <li>If it says to wash in cold water, DO IT. Warm water? DO IT. This can save your clothes.</li>
+                    </ul>
                 <li>If you're feeling lonely or sad, take out your clothes out straight from the dryer and bury yourself in their collective warmth. </li>
             </ul>
             <figure>
                 <img src="images/laundry.png" alt="Laundry Goals" title="What you should be doing">
-                <figcaption>This is your goal.</figcaption>
+                <figcaption>#goals...</figcaption>
             </figure>
-            <a href="#top">Back to Top</a>
-            <hr>
+            <p id="bttop"><a href="#top">Back to Top</a></p>
         </section>
+            <br>
         <section>
             <h2 id="cooking">Cooking</h2>
             <p>Save time for the week ahead by meal-prepping or have fun and try making a new dish!</p>
             <h3>Cooking Inspirations</h3>
-            <ul>
+            <ul id="outer">
                 <li>Recreate your mom's/grandma's/other parent's old recipe.</li>
                 <li>Think of a foreign country you've always wanted to visit or want to visit again and make a dish from that country.</li>
                 <li>Make a vegetable only dish.</li>
@@ -142,23 +138,23 @@
                 <li>Experiment with a recipe you know really well.</li>
             </ul>
             <h3>Cooking Tips</h3>
-            <ul>
+            <ul id="outer">
                 <li>Make a lot of food at one time. Freeze it and then reheat when necessary. (Don't make <i>too</i> much though.)</li>
                 <li>Know what ingredients you have before starting to make something.</li>
                 <li>Clean up after yourself while cooking. A clean kitchen is a happy kitchen.</li>
             </ul>
             <figure>
                 <img src="images/ratatouille_meme.gif" alt="Keep Your Station Clean" title="Heed her words">
-                <figcaption>Keep your kitchen clean</figcaption>
+                <figcaption>Keep your kitchen clean...</figcaption>
             </figure>
-            <a href="#top">Back to Top</a>
-            <hr>
+            <p id="bttop"><a href="#top">Back to Top</a></p>
         </section>
+            <br>
         <section>
             <h2 id="grocery">Grocery Shopping</h2>
             <p>Stock your fridge! You know you’ll need food this week, so you might as well purchase ingredients and other necessities while the weather is forcing you to be indoors.</p>
             <h3>Tips</h3>
-            <ul>
+            <ul id="outer">
                 <li>Check what you already have before you go.</li>
                 <li>Make a list of what you need and what you want.</li>
                 <li>Use COUPONS!</li>
@@ -166,35 +162,40 @@
             </ul>
             <figure>
                 <img src="images/grocery-shopping.gif" alt="Grocery Shopping" title="The perils of grocery shopping">
+                <figcaption>You never know what you'll find out grocery shopping...</figcaption>
             </figure>
-            <a href="#top">Back to Top</a>
-            <hr>
+            <p id="bttop"><a href="#top">Back to Top</a></p>
         </section>
+            <br>
         <section>
             <h2 id="hw">Homework/Studying</h2>
             <p>Boring but practical. Spend the rainy day indoors getting homework done, so that when it is nice outside you can go hang out with friends and enjoy the pleasant weather. Plus, it's never too early to start studying!</p>
             <h3>Tips</h3>
-            <ul>
+            <ul id="outer">
                 <li>Find a quiet place so that you can focus.</li>
-                <li>Do the easier, less time intensive things first.
-                    <br> And get them done quick!</li>
+                <li>Do the easier, less time intensive things first.</li>
+                    <ul id="inner">
+                        <li>And get them done quick!</li>
+                    </ul>
                 <li>Don't get stuck on one problem. Move on and come back to it later.</li>
                 <li>Prioritize. If your math homework is due tomorrow and your history homework is due next week, do your math homework first.</li>
-                <li>Do homework with a friend.
-                    <br> But don't break the honor code!</li>
+                <li>Do homework with a friend.</li>
+                    <ul id="inner">
+                        <li>But don't break the honor code!</li>
+                    </ul>
             </ul>
             <figure>
                 <img src="images/happy_student.jpg" alt="This could be you." title="This could be you.">
                 <figcaption>He looks happy, doesn't he?</figcaption>
             </figure>
-            <a href="#top">Back to Top</a>
-            <hr>
+            <p id="bttop"><a href="#top">Back to Top</a></p>
         </section>
+            <br>
         <section>
             <h2 id="money">Managing Finances</h2>
             <p>Check your budget! Figure out your utility bills, credit card statements, mortgage payments, taxes, etc... it’s very important!</p>
             <p>Click on the links below to find tools and tips to help you manage your finances.</p>
-            <ul>
+            <ul id="articles">
                 <li><a href="https://www.thebalance.com/manage-your-personal-finances-2385812">Steps to Help You Manage Your Personal Finances</a></li>
                 <li><a href="https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting">Bank of America: Better Money Habits - Saving &amp; Budgeting</a></li>
                 <li><a href="https://www.mappingyourfuture.org/money/">Mapping Your Future - Manage your money</a></li>
@@ -202,10 +203,11 @@
             </ul>
             <figure>
                 <img src="images/manage_money.jpg" alt="Manage Your Money" title="Managing your money">
+                <figcaption>It's not too hard...</figcaption>
             </figure>
-            <a href="#top">Back to Top</a>
-            <hr>
+            <p id="bttop"><a href="#top">Back to Top</a></p>
         </section>
+            <br>
     </main>
     <footer>
         <div class="suggestion-box">
