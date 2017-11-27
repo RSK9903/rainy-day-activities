@@ -781,7 +781,10 @@ p {
     }
 }
 
+
+/************** MOBILE VERSION *************/
 @media only screen and (max-width: 480px) {
+    
     /************* CSS for mobile header *************/
     header {
         max-width: 480px;
@@ -793,11 +796,13 @@ p {
         width: 30px;
     }
 
+    
     /************* CSS for mobile footer *************/
     footer .foot-nav li a {
         font-size: 10px;
     }
 
+    
     /************* CSS for mobile index *************/
     .categories li {
         margin-bottom: 1em;
@@ -834,6 +839,9 @@ p {
         height: 20px;
         font-size: 8px;
     }
+    
+    
+    
      /************* CSS for mobile card games *************/
     .CardGames h1, h2 {
         font-size: 20px;
@@ -873,7 +881,15 @@ p {
         height: 60%;
         justify-content:center;
     }
-}
+    
+    
+    
+    
+    
+    /*}
+    
+    
+
     /************* CSS for Something New ******************/
     .snImage {
         width:100px;
@@ -921,17 +937,41 @@ p {
     .boardGames section img {
         width: 140px;
     }
-}
+    
+    
+    /************* CSS for activities (mobile mode) *************/
+    .activities h1 {
+        font-size: 20px;
+    }
 
-/************* CSS for mobile card games *************/
+    .activities h3 {
+        font-size: 10px;
+    }
 
+    .activities h1 img {
+        width: 20px;
+        height: 20px;
+    }
 
+    .activities section {
+        width: 280px;
+        height: 350px;
+        flex-direction: column;
+    }
 
+    .activities section > div {
+        font-size: 10px;
+    }
 
-
-/************* CSS for activities (mobile mode) *************/
+    .activities section img {
+        width: 140px;
+    }
+    
+    
+    
+    
+} /********* MOBIL VERSION ENDS HERE **********/
  
-
 
 
 /************* CSS for about page *************/
