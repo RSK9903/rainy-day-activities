@@ -30,7 +30,8 @@ a:active{color:rgb(152,49,255); text-decoration: none}
 #bttop{font-size:20px;}
 #bttop a:link{text-decoration: none}
 
-#pro p{width:70%; margin-left: auto; margin-right: auto}
+#ita{font-style: italic;}
+#pro p{width:90%; margin-left: auto; margin-right: auto}
 #pro section figure{flex-direction: column; margin-top: 15px; margin-bottom: 10px}
 #pro section figure img{height:250px; align-self: center}
 #pro figcaption{text-align: center;margin-top:5px;}
