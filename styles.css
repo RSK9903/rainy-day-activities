@@ -537,7 +537,7 @@ body {
 .activities section > div > ul a li:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.4s ease-out;
-    background-color: lightgrey;
+    background-color: limegreen;
 }
 
 
@@ -731,6 +731,35 @@ p {
         height:100%;
     }
     
+    /************ CSS for activities (tablet mode)  ********************/
+    
+     .activities h1 {
+        font-size: 26px;
+    }
+
+    .activities h3 {
+        font-size: 16px;
+    }
+
+    .activities h1 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .activities section {
+        width: 480px;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .activities section > div {
+        font-size: 12px;
+    }
+
+    .activities section img {
+        width: 160px;
+    }
+    
     
     /************ CSS for Somrthing new ********************/
     .snImage {
@@ -895,7 +924,15 @@ p {
 }
 
 /************* CSS for mobile card games *************/
-    
+
+
+
+
+
+/************* CSS for activities (mobile mode) *************/
+ 
+
+
 
 /************* CSS for about page *************/
 .about,
