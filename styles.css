@@ -469,8 +469,13 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
+<<<<<<< HEAD
     width: 800px;
     height: 520px;
+=======
+    width: 810px;
+    height: 400px;
+>>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
     flex-direction: row;
     justify-content: space-around;
 }
@@ -489,7 +494,11 @@ body {
 
 .activities section div div ul {
     flex-direction: column;
+<<<<<<< HEAD
     align-items: center;
+=======
+    align-items: flex-start;
+>>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
 }
 .activities section div div ul li {
     margin: 5px 0 5px 0;
@@ -511,7 +520,11 @@ body {
 }
 
 .activities section img {
+<<<<<<< HEAD
     width: 300px;
+=======
+    width: 450px;
+>>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
 }
 
 .activities section > div > ul {
@@ -537,7 +550,11 @@ body {
 .activities section > div > ul a li:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.4s ease-out;
+<<<<<<< HEAD
     background-color: lightgrey;
+=======
+    background-color: limegreen;
+>>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
 }
 
 
@@ -731,6 +748,35 @@ p {
         height:100%;
     }
     
+    /************ CSS for activities (tablet mode)  ********************/
+    
+     .activities h1 {
+        font-size: 26px;
+    }
+
+    .activities h3 {
+        font-size: 16px;
+    }
+
+    .activities h1 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .activities section {
+        width: 480px;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .activities section > div {
+        font-size: 12px;
+    }
+
+    .activities section img {
+        width: 160px;
+    }
+    
     
     /************ CSS for Somrthing new ********************/
     .snImage {
@@ -752,7 +798,10 @@ p {
     }
 }
 
+
+/************** MOBILE VERSION *************/
 @media only screen and (max-width: 480px) {
+    
     /************* CSS for mobile header *************/
     header {
         max-width: 480px;
@@ -764,11 +813,13 @@ p {
         width: 30px;
     }
 
+    
     /************* CSS for mobile footer *************/
     footer .foot-nav li a {
         font-size: 10px;
     }
 
+    
     /************* CSS for mobile index *************/
     .categories li {
         margin-bottom: 1em;
@@ -805,7 +856,14 @@ p {
         height: 20px;
         font-size: 8px;
     }
+<<<<<<< HEAD
 /************* CSS for mobile card games *************/
+=======
+    
+    
+    
+     /************* CSS for mobile card games *************/
+>>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
     .CardGames h1, h2 {
         font-size: 20px; 
     }
@@ -852,7 +910,18 @@ p {
         height: 60%;
         justify-content:center;
     }
+<<<<<<< HEAD
 } 
+=======
+    
+    
+    
+    
+    
+    /*}
+    
+    
+>>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
 
     /************* CSS for Something New ******************/
     .snImage {
@@ -901,10 +970,46 @@ p {
     .boardGames section img {
         width: 140px;
     }
-}
-
-
     
+    
+    /************* CSS for activities (mobile mode) *************/
+    .activities h1 {
+        font-size: 20px;
+    }
+
+    .activities h3 {
+        font-size: 10px;
+    }
+
+    .activities h1 img {
+        width: 20px;
+        height: 20px;
+    }
+
+<<<<<<< HEAD
+
+=======
+    .activities section {
+        width: 280px;
+        height: 350px;
+        flex-direction: column;
+    }
+
+    .activities section > div {
+        font-size: 10px;
+    }
+
+    .activities section img {
+        width: 140px;
+    }
+>>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
+    
+    
+    
+    
+} /********* MOBIL VERSION ENDS HERE **********/
+ 
+
 
 /************* CSS for about page *************/
 .about,
