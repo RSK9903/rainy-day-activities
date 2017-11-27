@@ -71,9 +71,6 @@ footer .foot-nav {
     justify-content: center;
 }
 
-footer .foot-nav li {
-}
-
 footer .foot-nav li a {
     text-decoration: none;
     color: grey;
@@ -338,14 +335,14 @@ body {
 .CardGames section div > ul li,
 .CardGames section div > ul a li {
     display: flex;
-} 
+}
 
 .CardGames main, .CardGames h1, .CardGames h3, .CardGames table, .CardGames h2, .CardGames bs{
     display:flex;
     justify-content: center;
 }
 .CardGames main, .CardGames h1, .CardGames table{
-   margin-top:5%; 
+   margin-top:5%;
 }
 
 .CardGames, .CardGames section {
@@ -363,13 +360,13 @@ body {
     height: 400px;
     flex-direction: row;
     justify-content: space-around;
-   
+
 }
 .CardGames p{
     margin-left:1%;
     margin-right: 1%;
-    
-   
+
+
 }
 .CardGames h1 {
     justify-content: center;
@@ -385,7 +382,7 @@ body {
     border-top: solid 1pt black;
     border-bottom: solid 1pt black;
     text-shadow: 2px 2px 2px grey;
-    
+
 }
 
 .CardGames section div h2 {
@@ -432,7 +429,7 @@ body {
     transform: scale(1.1, 1.1);
     transition: all 0.4s ease-out;
     background-color: limegreen;
-} 
+}
 
 
 /************* CSS for Activities *************/
@@ -469,13 +466,10 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-<<<<<<< HEAD
     width: 800px;
     height: 520px;
-=======
     width: 810px;
     height: 400px;
->>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
     flex-direction: row;
     justify-content: space-around;
 }
@@ -494,11 +488,8 @@ body {
 
 .activities section div div ul {
     flex-direction: column;
-<<<<<<< HEAD
     align-items: center;
-=======
     align-items: flex-start;
->>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
 }
 .activities section div div ul li {
     margin: 5px 0 5px 0;
@@ -520,11 +511,8 @@ body {
 }
 
 .activities section img {
-<<<<<<< HEAD
     width: 300px;
-=======
     width: 450px;
->>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
 }
 
 .activities section > div > ul {
@@ -550,14 +538,9 @@ body {
 .activities section > div > ul a li:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.4s ease-out;
-<<<<<<< HEAD
     background-color: lightgrey;
-=======
     background-color: limegreen;
->>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
 }
-
-
 
 
 /************* CSS for something new *************/
@@ -718,7 +701,7 @@ p {
     .boardGames section img {
         width: 160px;
     }
-    
+
     /************* CSS for tablet card games *************/
      .CardGames h1 {
         font-size: 26px;
@@ -747,9 +730,9 @@ p {
         width: 90%;
         height:100%;
     }
-    
+
     /************ CSS for activities (tablet mode)  ********************/
-    
+
      .activities h1 {
         font-size: 26px;
     }
@@ -776,8 +759,8 @@ p {
     .activities section img {
         width: 160px;
     }
-    
-    
+
+
     /************ CSS for Somrthing new ********************/
     .snImage {
         width:150px;
@@ -801,7 +784,7 @@ p {
 
 /************** MOBILE VERSION *************/
 @media only screen and (max-width: 480px) {
-    
+
     /************* CSS for mobile header *************/
     header {
         max-width: 480px;
@@ -813,13 +796,13 @@ p {
         width: 30px;
     }
 
-    
+
     /************* CSS for mobile footer *************/
     footer .foot-nav li a {
         font-size: 10px;
     }
 
-    
+
     /************* CSS for mobile index *************/
     .categories li {
         margin-bottom: 1em;
@@ -856,12 +839,10 @@ p {
         height: 20px;
         font-size: 8px;
     }
-<<<<<<< HEAD=======
->>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
-    
+
     /************* CSS for mobile card games *************/
-    .CardGames h1, h2 {
-        font-size: 20px; 
+    .CardGames h1, .CardGames h2 {
+        font-size: 20px;
     }
 
     .CardGames h3 {
@@ -873,21 +854,22 @@ p {
         height: 70px;
     }
 
-    .CardGames section, ul, li {
+    .CardGames section, .CardGames ul, .CardGames li {
         width: 90%;
         height: 90%;
         flex-direction: column;
         justify-content: center;
     }
+
     .CardGames nav-links{
-         flex-direction:row; 
-        
-        
+         flex-direction:row;
+
+
     }
     .CardGames section > div {
         font-size: 10px;
     }
-    
+
     .CardGames section{
         text-align: center;
     }
@@ -898,26 +880,14 @@ p {
         margin:auto;
         margin-top:5px;
         margin-bottom:15px;
-        
-        
+
+
     }
-    .CardGames section img, ul, li {
+    .CardGames section img, .CardGames ul, .CardGames li {
         width: 80%;
         height: 60%;
         justify-content:center;
     }
-<<<<<<< HEAD
-} 
-=======
-    
-    
-    
-    
-    
-    /*}
-    
-    
->>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
 
     /************* CSS for Something New ******************/
     .snImage {
@@ -966,8 +936,8 @@ p {
     .boardGames section img {
         width: 140px;
     }
-    
-    
+
+
     /************* CSS for activities (mobile mode) *************/
     .activities h1 {
         font-size: 20px;
@@ -982,9 +952,6 @@ p {
         height: 20px;
     }
 
-<<<<<<< HEAD
-
-=======
     .activities section {
         width: 280px;
         height: 350px;
@@ -998,13 +965,12 @@ p {
     .activities section img {
         width: 140px;
     }
->>>>>>> 7ac86a6be9c53484d622f8006f4b4e408456a915
-    
-    
-    
-    
+
+
+
+
 } /********* MOBIL VERSION ENDS HERE **********/
- 
+
 
 
 /************* CSS for about page *************/
