@@ -1,8 +1,8 @@
 .arts{margin-left: auto; margin-right: auto; width:750px;}
-a:link{color:black; text-decoration: underline}
-a:visited{color:black; text-decoration: underline}
-a:hover{color: blue; font-style: italic; font-weight: bold; text-decoration: underline;}
-a:active{color:rgb(152,49,255); text-decoration: none}
+.arts a:link{color:black; text-decoration: underline}
+.arts a:visited{color:black; text-decoration: underline}
+.arts a:hover{color: blue; font-style: italic; font-weight: bold; text-decoration: underline;}
+.arts a:active{color:rgb(152,49,255); text-decoration: none}
 .strong{font-weight: bold;}
 
 .arts section{margin-top:15px; line-height: 2; border:solid 1pt black; border-radius: 10px; background-color:white; box-shadow: 5px 5px 5px 2px grey; padding-bottom: 15px; padding-top:15px; margin-bottom: 20px;}
