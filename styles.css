@@ -343,7 +343,7 @@ body {
     display: flex;
 }
 
-.CardGames main, .CardGames h1, .CardGames h3, .CardGames table, .CardGames h2, .CardGames bs{
+.CardGames main, .CardGames h1, .CardGames h3, .CardGames table, .CardGames h2, .CardGames .bs{
     display:flex;
     justify-content: center;
 }
@@ -355,7 +355,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    margin: 0;
 }
 
 .bs, .gofish, .oldmaid, .rummy, .spades, .solitaire, .spit, .war, .blackjack, .poker, .uno{
@@ -370,7 +369,7 @@ body {
     justify-content: space-around;
 
 }
-.CardGames p{
+.CardGames p {
     margin-left:1%;
     margin-right: 1%;
 
@@ -388,7 +387,8 @@ body {
 .description {
     padding-bottom: 20px;
     text-shadow: 2px 2px 2px grey;
-
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
 }
 
 .CardGames section div h2 {
