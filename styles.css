@@ -34,6 +34,7 @@ header .logo img {
 
 header .nav-links li a {
     align-items: center;
+    display: block;
     padding: 0 12px;
     text-decoration: none;
     color: white;
@@ -47,7 +48,33 @@ header .nav-links li a:hover {
     transition: all 0.2s ease-out;
 }
 
+#drop div {
+    position: static;
+    display:block;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: black;
+}
 
+#drop div a {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 5px 10px;
+    width: auto;
+    white-space: nowrap;
+    text-align: left;
+    text-decoration: none;
+    background: white;
+    color: rgb(94, 115, 101);
+}
+
+#sddm div a:hover {
+    background:rgb(108, 181, 96); 
+    color: #FFF;
+}
 
 /************* CSS for footer *************/
 footer,
