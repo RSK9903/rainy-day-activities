@@ -26,7 +26,8 @@ header {
 
 header .logo img {
     margin: .5em;
-    width: 50px;
+    width: 175px;
+    height: auto;
 }
 
 header .nav-links li a {
@@ -43,6 +44,7 @@ header .nav-links li a:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.2s ease-out;
 }
+
 
 
 /************* CSS for footer *************/
@@ -240,6 +242,8 @@ body {
 .boardGames, .boardGames section {
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .boardGames section {
@@ -256,7 +260,7 @@ body {
 
 .boardGames h1 {
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 15px;
 }
 
 .boardGames section div div {
@@ -348,6 +352,8 @@ body {
 .CardGames, .CardGames section {
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .bs, .gofish, .oldmaid, .rummy, .spades, .solitaire, .spit, .war, .blackjack, .poker, .uno{
@@ -370,7 +376,7 @@ body {
 }
 .CardGames h1 {
     justify-content: center;
-    margin-top: 5%;
+    margin-top: ;
 }
 
 .CardGames h2 {
@@ -390,8 +396,8 @@ body {
 }
 
 .CardGames h1 img {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 .CardGames section > div {
