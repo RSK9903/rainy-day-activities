@@ -4,6 +4,8 @@
     font-family: sans-serif;
 }
 
+#test{width:175px;height: auto} /*This controls the new logo*/
+
 /************* CSS for header *************/
 header,
 header .logo,
@@ -385,8 +387,6 @@ body {
 
 .description {
     padding-bottom: 20px;
-    border-top: solid 1pt black;
-    border-bottom: solid 1pt black;
     text-shadow: 2px 2px 2px grey;
 
 }
@@ -550,6 +550,7 @@ body {
 
 
 /************* CSS for something new *************/
+/*Anchor*/
 
 .SN {
     display: flex;
@@ -560,6 +561,7 @@ body {
 .SN section {
     display: flex;
     text-align: center;
+
 }
 
 .tableOfContents {
@@ -593,24 +595,39 @@ body {
     margin: 30px 10px 10px 10px;
 }
 .podcasts {
-    border-top: 1px solid black;
-    border-bottom: 3px solid black;
     padding-bottom: 20px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 1px black;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin-bottom: 10px;
+
 }
 .learnToCode {
     padding-top: 20px;
     padding-bottom:20px;
-    border-bottom: 3px solid black;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 1px black;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin-bottom: 10px;
 
 }
 .instrument {
     padding-top: 20px;
     padding-bottom:20px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 1px black;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin-bottom: 10px;
+    
 }
+
 .intro {
     width: 350px;
     margin-top:5px;
