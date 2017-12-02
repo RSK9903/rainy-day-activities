@@ -1,3 +1,7 @@
+// window.addEventListener("load",function(){
+// 	var 
+
+// });
 	var timeout	= 100;
 	var closetimer	= 0;
 	var ddmenuitem	= 0;
@@ -39,4 +43,4 @@
 	}
 
 	// close layer when click-out
-	document.onclick = mclose; 
+	//document.onclick = mclose; 

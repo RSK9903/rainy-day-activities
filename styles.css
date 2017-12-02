@@ -44,7 +44,7 @@ header .nav-links li>a {
 
 header .nav-links li>a:hover {
     background-color: grey;
-    /*transform: scale(1.1, 1.1);*/
+    transform: scale(1.1, 1.1);
     transition: all 0.2s ease-out;
 }
 
@@ -64,6 +64,7 @@ header .nav-links li>a:hover {
     background: white;
     border: black;
     align-items: flex-start;
+    box-shadow: 5px 5px 5px 2px grey;
 }
 
 #drop div a {
@@ -79,7 +80,7 @@ header .nav-links li>a:hover {
 }
 
 #drop div a:hover {
-    background-color: black; 
+    background-color: rgb(63, 157, 214); 
     color: white;
 }
 
@@ -178,7 +179,7 @@ body {
 
 .categories ul li a:hover {
     box-shadow: 0 0 5px 2px darkblue;
-    transform: scale(1.01, 1.01);
+    /*transform: scale(1.1, 1.1);*/
     transition: all 0.2s ease-out;
 }
 
