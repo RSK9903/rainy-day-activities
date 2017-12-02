@@ -289,7 +289,7 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-    width: 800px;
+    width: 750px;
     height: 400px;
     flex-direction: row;
     justify-content: space-around;
@@ -384,12 +384,21 @@ body {
     display:flex;
     justify-content: center;
 }
-.CardGames main, .CardGames table{
+/*.CardGames main, .CardGames table{
    margin-top:5%;
-}
+}*/
 
 .CardGames h1{
     margin-top: 20px;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.CardGames h3{
+    font-size:110%;
+    font-weight:normal; 
+    font-style: italic;
+    margin-top: 10px;
 }
 
 .CardGames, .CardGames section {
@@ -398,13 +407,17 @@ body {
     padding: 0;
 }
 
+.CardGames section {
+    margin-bottom: 35px;
+}
+
 .bs, .gofish, .oldmaid, .rummy, .spades, .solitaire, .spit, .war, .blackjack, .poker, .uno{
     margin: 1em 0 1em 0;
     border: solid 1pt black;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-    width: 800px;
+    width: 750px;
     height: 400px;
     flex-direction: row;
     justify-content: space-around;
@@ -413,16 +426,10 @@ body {
 .CardGames p {
     margin-left:1%;
     margin-right: 1%;
-
-
-}
-.CardGames h1 {
-    justify-content: center;
-    font-size: 40px;
 }
 
 .CardGames h2 {
-    margin-top:2%;
+    margin-top:10px;
 }
 
 .description {
@@ -507,14 +514,12 @@ body {
 }
 
 .activities section {
-    margin: 1em 0 1em 0;
+    margin: 15px 0;
     border: solid 1pt black;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-    width: 800px;
-    height: 520px;
-    width: 800px;
+    width: 750px;
     height: 400px;
     flex-direction: row;
     justify-content: space-around;
@@ -549,6 +554,12 @@ body {
 .activities h1 img {
     height: 45px;
     margin: 0 5px;
+}
+
+.activities h3 {
+    font-weight: normal; 
+    font-style: italic; 
+    margin-top: 10px;
 }
 
 .activities section > div {
@@ -651,11 +662,21 @@ body {
     margin: 20px 0px 20px 0px;
 }
 
-.snImage {
+.snImage{
     width:200px;
     height: 200px;
     float:left;
     border-radius: 10%;
+}
+
+.snImage img{
+    width: 200px;
+}
+
+.SN h3 {
+    font-weight: normal; 
+    font-style: italic; 
+    margin-top: 10px;
 }
 
 .tableOfContents table tr th {
@@ -693,6 +714,7 @@ body {
     border: solid 1px black;
     box-shadow: 2px 2px 2px 2px grey;
     margin-bottom: 10px;
+    /*width: 750px;*/
 
 }
 .learnToCode {
@@ -1177,7 +1199,9 @@ p {
 
 .about h2 {
     text-decoration: underline;
+    margin-top: 20px;
     margin-bottom: 1em;
+    font-size: 35px;
 }
 
 .about ul {
@@ -1214,13 +1238,15 @@ p {
 }
 
 .contact h1 {
-    margin-bottom: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .contact > div {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 20px;
 }
 
 /************* CSS for help page *************/
@@ -1232,6 +1258,8 @@ p {
 
 .help h1 {
     font-style: italic;
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 /************* CSS for site map page *************/
@@ -1256,6 +1284,11 @@ p {
 
 .map div {
     margin-bottom: 1em;
+}
+
+.map h1 {
+    margin: 20px;
+    font-size: 40px;
 }
 
 .map div ul li a {
