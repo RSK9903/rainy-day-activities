@@ -43,9 +43,9 @@ header .nav-links li>a {
 }
 
 header .nav-links li>a:hover {
-    background-color: grey;
+    background-color: grey;/*
     transform: scale(1.1, 1.1);
-    transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;*/
 }
 
 #drop li{
@@ -55,7 +55,6 @@ header .nav-links li>a:hover {
 }
 
 #drop div {
-
     position: absolute;
     display: none;
     flex-direction: column;
@@ -64,12 +63,11 @@ header .nav-links li>a:hover {
     background: white;
     border: black;
     align-items: flex-start;
-    box-shadow: 5px 5px 5px 2px grey;
+    box-shadow: 3px 3px 15px 1px grey;
 }
 
 #drop div a {
-    display: block;
-    margin: 0;
+    display: flex;
     padding: 5px 10px;
     width: auto;
     white-space: nowrap;
@@ -77,6 +75,8 @@ header .nav-links li>a:hover {
     text-decoration: none;
     background: white;
     color: black;
+    height:25px;
+    align-items: center;
 }
 
 #drop div a:hover {
@@ -583,6 +583,72 @@ body {
     background-color: limegreen;
 }
 
+/************* CSS for arts and crafts and productivity ***************/
+.arts{margin-left: auto; margin-right: auto; width:750px;}
+.arts a:link{color:black; text-decoration: underline}
+.arts a:visited{color:black; text-decoration: underline}
+.arts a:hover{color: blue; font-style: italic; font-weight: bold; text-decoration: underline;}
+.arts a:active{color:rgb(152,49,255); text-decoration: none}
+.strong{font-weight: bold;}
+
+.arts section{margin-top:15px; line-height: 2; border:solid 1pt black; border-radius: 10px; background-color:white; box-shadow: 5px 5px 5px 2px grey; padding-bottom: 15px; padding-top:15px; margin-bottom: 20px;}
+.arts section figure{display:flex; justify-content: center; margin-bottom:20px; margin-top: 5px;}
+.arts section img{max-width: 100%; max-height:300px; height: auto;}
+.arts section h2{display:flex; justify-content: center; }
+.arts h2+p{margin-bottom: 10px}
+.arts p{text-align: center}
+.arts section h3{display: flex; justify-content: center; }
+.arts section ul {display:flex; flex-direction:column; margin-bottom: 10px; width: 85%;margin-left: auto; margin-right: auto;}
+.arts section ul li {list-style-type: none; text-align: center; font-size:18px;}
+
+#title{margin-top: 20px;}
+#title h1{display:flex; justify-content: center; font-size:40px;margin-bottom: 10px;}
+#title img{height: 50px;}
+#title h3{display:flex; justify-content: center; font-size:110%; font-weight:normal; font-style: italic;}
+
+.DIY ul li {text-align:left;}
+#articles li{text-align: center; font-size:16px;}
+#articles a:link{text-decoration:none;}
+#articles a:visited{text-decoration: none;}
+
+#sketchIdeas li{font-weight:bold;}
+#bttop{font-size:20px;}
+#bttop a:link{text-decoration: none}
+
+#ita{font-style: italic;}
+#pro p{width:90%; margin-left: auto; margin-right: auto}
+#pro section figure{flex-direction: column; margin-top: 15px; margin-bottom: 10px}
+#pro section figure img{height:250px; align-self: center}
+#pro figcaption{text-align: center;margin-top:5px;}
+#outer{margin-left: auto; margin-right:auto;width:60%; }
+#outer li{text-align:justify;list-style-type: disc; font-size:16px;}
+#inner{margin:0 0 0 5%; width:100%;}
+#inner li{text-align: left; list-style-type: circle;}
+
+
+@media only screen and (min-width:481px) and (max-width: 800px){
+    #test{width:130px; height: auto;}
+    .arts{width:90%;}
+    .arts section p{width:90%; margin-left: auto;margin-right: auto}
+    .arts section figure{margin-bottom: 10px}
+    .arts section img{max-width: 100%; height:auto; max-height: 200px;}
+    #outer{width:80%;}
+}
+
+@media only screen and (max-width: 480px){
+    #test{width:100px;}
+    .arts p, .arts figcaption, #outer li, #articles li, .arts section ul li{font-size:14px;}
+    #bttop{font-size:16px;}
+    .arts{width:90%;}
+    .arts section p{width:90%; margin-left: auto;margin-right: auto;}
+    .arts section figure{margin-bottom: 0px; width:95%; margin-left: auto;margin-right: auto}
+    .arts section img{max-width: 100%; height:auto; max-height: 150px;}
+    .arts section ul{width:75%;}
+    #outer{width:70%; }
+    #outer li{text-align: left}
+}
+
+
 
 /************* CSS for something new *************/
 /*Anchor*/
@@ -596,7 +662,7 @@ body {
 .SN section {
     display: flex;
     text-align: center;
-
+    margin-top: 20px;
 }
 
 .tableOfContents {
