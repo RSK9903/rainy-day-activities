@@ -4,8 +4,6 @@
     font-family: sans-serif;
 }
 
-#test{width:175px;height: auto} /*This controls the new logo*/
-
 /************* CSS for header *************/
 header,
 header .logo,
@@ -326,6 +324,13 @@ body {
     margin: 0 5px;
 }
 
+/*"Roll the dice..." added id name for easier styling*/
+#tagline {
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 .boardGames section > div {
     flex-direction: column;
     align-items: center;
@@ -395,7 +400,6 @@ body {
 }
 
 .CardGames h3{
-    font-size:110%;
     font-weight:normal; 
     font-style: italic;
     margin-top: 10px;
@@ -611,7 +615,7 @@ body {
 #title{margin-top: 20px;}
 #title h1{display:flex; justify-content: center; font-size:40px;margin-bottom: 10px;}
 #title img{height: 45px; margin: 0 3px;}
-#title h3{display:flex; justify-content: center; font-size:110%; font-weight:normal; font-style: italic;}
+#title h3{display:flex; justify-content: center; font-weight:normal; font-style: italic;}
 
 .arts section{margin-top:15px; line-height: 2; border:solid 1pt black; border-radius: 10px; background-color:white; box-shadow: 5px 5px 5px 2px grey; padding-bottom: 15px; padding-top:15px; margin-bottom: 20px;}
 .arts section figure{display:flex; justify-content: center; margin-bottom:20px; margin-top: 5px;}
@@ -758,7 +762,7 @@ p {
 
     header .logo img {
         margin: 1em;
-        width: 40px;
+        width: 130px;
     }
 
     header .nav-links li a {
@@ -894,10 +898,18 @@ p {
     }
 
     /**********  CSS for tablet arts/productivity  ********/
-    #test{
-        width:130px;
-        height: auto;
+    #title h1 {
+        font-size: 26px;
     }
+
+    #title img {
+        height:30px;
+    }
+    
+    #title h3 {
+        font-size: medium;
+    }
+
     .arts{
         width:90%;
     }
@@ -929,6 +941,18 @@ p {
         align-items: center;
     }
 
+    #TSN {
+        font-size: 26px;
+    }
+
+    #TSN img {
+        height:30px;
+    }
+
+    .SN h3 {
+        font-size: medium;
+    }
+
     .description {
         width:200px;
         margin: 30px 10px 10px 10px;
@@ -956,7 +980,7 @@ p {
 
     header .logo img {
         margin: 1em;
-        width: 30px;
+        width: 100px;
     }
 
 
@@ -1009,12 +1033,12 @@ p {
     }
 
     .CardGames h3 {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .CardGames h1 img {
         width: 20px;
-        height: 70px;
+        height: 20px;
     }
 
     .CardGames section, .CardGames ul, .CardGames li {
@@ -1053,12 +1077,18 @@ p {
     }
 
 
-/****** CSS for arts/productivity *******/
-    #test{
-        width:100px;
-    }
+/****** CSS for mobile arts/productivity *******/
     .arts p, .arts figcaption, #outer li, #articles li, .arts section ul li{
         font-size:14px;
+    }
+    #title h1 {
+        font-size: 20px;
+    }
+    #title img {
+        height:20px;
+    }
+    #title h3 {
+        font-size: 10px;
     }
     #bttop{
         font-size:16px;
@@ -1093,7 +1123,16 @@ p {
     }
 
 
-    /************* CSS for Something New ******************/
+    /************* CSS for mobile Something New ******************/
+    #TSN {
+        font-size: 20px;
+    }
+    #TSN img {
+        height: 20px;
+    }
+    .SN h3 {
+        font-size: 10px;
+    }
     .snImage {
         width:100px;
         height: 100px;
@@ -1105,7 +1144,7 @@ p {
         text-align: center;
     }
     .SYSK {
-        width: 400px;
+        width: 280px;
         }
     .podcasts {
         border-bottom: 1px solid black;
@@ -1173,7 +1212,7 @@ p {
 
 
 
-} /********* MOBIL VERSION ENDS HERE **********/
+} /********* MOBILE VERSION ENDS HERE **********/
 
 
 
