@@ -9,17 +9,17 @@
 	mcancelclosetime();
 
 	// close old layer
-	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+	if(ddmenuitem) ddmenuitem.style.display = 'none';
 
 	// get new layer and show it
 	ddmenuitem = document.getElementById(id);
-	ddmenuitem.style.visibility = 'visible';
+	ddmenuitem.style.display = 'block';
 
 	}
 	// close showed layer
 	function mclose()
 	{
-	  if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+	  if(ddmenuitem) ddmenuitem.style.display = 'none';
 	}
 
 	// go close timer

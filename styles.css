@@ -39,6 +39,7 @@ header .nav-links li>a {
     color: white;
     background-color: black;
     height: 50px;
+    display:block;
 }
 
 header .nav-links li>a:hover {
@@ -50,14 +51,15 @@ header .nav-links li>a:hover {
 #drop li{
     flex-direction: column;
     align-items: flex-start;
-    width: 150px;
+
 }
 
 #drop div {
-    /*align-items: flex-start;*/
-    position: sticky;
-    visibility: hidden;
-    margin: 0;
+
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top:50px;
     padding: 0;
     background: white;
     border: black;
@@ -65,7 +67,7 @@ header .nav-links li>a:hover {
 }
 
 #drop div a {
-    position: relative;
+    display: block;
     margin: 0;
     padding: 5px 10px;
     width: auto;
@@ -73,7 +75,7 @@ header .nav-links li>a:hover {
     text-align: left;
     text-decoration: none;
     background: white;
-    color: rgb(94, 115, 101);
+    color: black;
 }
 
 #drop div a:hover {
