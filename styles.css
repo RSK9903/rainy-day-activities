@@ -297,7 +297,8 @@ body {
 
 .boardGames h1 {
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 .boardGames section div div {
@@ -320,8 +321,9 @@ body {
 }
 
 .boardGames h1 img {
-    width: 40px;
-    height: 40px;
+    /*width: 40px;*/
+    height: 50px;
+    margin: 0 5px;
 }
 
 .boardGames section > div {
@@ -382,8 +384,12 @@ body {
     display:flex;
     justify-content: center;
 }
-.CardGames main, .CardGames h1, .CardGames table{
+.CardGames main, .CardGames table{
    margin-top:5%;
+}
+
+.CardGames h1{
+    margin-top: 20px;
 }
 
 .CardGames, .CardGames section {
@@ -412,7 +418,7 @@ body {
 }
 .CardGames h1 {
     justify-content: center;
-    margin-top: ;
+    font-size: 40px;
 }
 
 .CardGames h2 {
@@ -431,8 +437,7 @@ body {
 }
 
 .CardGames h1 img {
-    max-width: 40px;
-    max-height: 40px;
+    height: 45px;
 }
 
 .CardGames section > div {
@@ -517,7 +522,8 @@ body {
 
 .activities h1 {
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 .activities section div div {
@@ -541,8 +547,8 @@ body {
 }
 
 .activities h1 img {
-    width: 40px;
-    height: 40px;
+    height: 45px;
+    margin: 0 5px;
 }
 
 .activities section > div {
@@ -591,6 +597,11 @@ body {
 .arts a:active{color:rgb(152,49,255); text-decoration: none}
 .strong{font-weight: bold;}
 
+#title{margin-top: 20px;}
+#title h1{display:flex; justify-content: center; font-size:40px;margin-bottom: 10px;}
+#title img{height: 45px; margin: 0 3px;}
+#title h3{display:flex; justify-content: center; font-size:110%; font-weight:normal; font-style: italic;}
+
 .arts section{margin-top:15px; line-height: 2; border:solid 1pt black; border-radius: 10px; background-color:white; box-shadow: 5px 5px 5px 2px grey; padding-bottom: 15px; padding-top:15px; margin-bottom: 20px;}
 .arts section figure{display:flex; justify-content: center; margin-bottom:20px; margin-top: 5px;}
 .arts section img{max-width: 100%; max-height:300px; height: auto;}
@@ -600,11 +611,6 @@ body {
 .arts section h3{display: flex; justify-content: center; }
 .arts section ul {display:flex; flex-direction:column; margin-bottom: 10px; width: 85%;margin-left: auto; margin-right: auto;}
 .arts section ul li {list-style-type: none; text-align: center; font-size:18px;}
-
-#title{margin-top: 20px;}
-#title h1{display:flex; justify-content: center; font-size:40px;margin-bottom: 10px;}
-#title img{height: 50px;}
-#title h3{display:flex; justify-content: center; font-size:110%; font-weight:normal; font-style: italic;}
 
 .DIY ul li {text-align:left;}
 #articles li{text-align: center; font-size:16px;}
@@ -663,8 +669,14 @@ body {
 }
 
 #TSN {
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
+    font-size: 40px;
+    display:flex;
+}
+
+#TSN>img{
+    height: 45px;
 }
 
 .description {
