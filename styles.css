@@ -625,31 +625,6 @@ body {
 #inner{margin:0 0 0 5%; width:100%;}
 #inner li{text-align: left; list-style-type: circle;}
 
-
-@media only screen and (min-width:481px) and (max-width: 800px){
-    #test{width:130px; height: auto;}
-    .arts{width:90%;}
-    .arts section p{width:90%; margin-left: auto;margin-right: auto}
-    .arts section figure{margin-bottom: 10px}
-    .arts section img{max-width: 100%; height:auto; max-height: 200px;}
-    #outer{width:80%;}
-}
-
-@media only screen and (max-width: 480px){
-    #test{width:100px;}
-    .arts p, .arts figcaption, #outer li, #articles li, .arts section ul li{font-size:14px;}
-    #bttop{font-size:16px;}
-    .arts{width:90%;}
-    .arts section p{width:90%; margin-left: auto;margin-right: auto;}
-    .arts section figure{margin-bottom: 0px; width:95%; margin-left: auto;margin-right: auto}
-    .arts section img{max-width: 100%; height:auto; max-height: 150px;}
-    .arts section ul{width:75%;}
-    #outer{width:70%; }
-    #outer li{text-align: left}
-}
-
-
-
 /************* CSS for something new *************/
 /*Anchor*/
 
@@ -739,7 +714,7 @@ p {
 }
 
 /************* CSS for mobile devices *************/
-
+ /*CSS for tablets*/
 @media only screen and (min-width: 481px) and (max-width: 800px) {
     /************* CSS for tablet header *************/
     header {
@@ -884,8 +859,32 @@ p {
         width: 160px;
     }
 
+    /**********  CSS for tablet arts/productivity  ********/
+    #test{
+        width:130px;
+        height: auto;
+    }
+    .arts{
+        width:90%;
+    }
+    .arts section p{
+        width:90%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .arts section figure{
+        margin-bottom: 10px;
+    }
+    .arts section img{
+        max-width: 100%; 
+        height:auto; 
+        ax-height: 200px;
+    }
+    #outer{
+        width:80%;
+    }
 
-    /************ CSS for Somrthing new ********************/
+    /************ CSS for Something new ********************/
     .snImage {
         width:150px;
         height: 150px;
@@ -1018,6 +1017,47 @@ p {
         height: 60%;
         justify-content:center;
     }
+
+
+/****** CSS for arts/productivity *******/
+    #test{
+        width:100px;
+    }
+    .arts p, .arts figcaption, #outer li, #articles li, .arts section ul li{
+        font-size:14px;
+    }
+    #bttop{
+        font-size:16px;
+    }
+    .arts{
+        width:90%;
+    }
+    .arts section p{
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .arts section figure{
+        margin-bottom: 0px;
+        width:95%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .arts section img{
+        max-width: 100%;
+        height:auto;
+        max-height: 150px;
+    }
+    .arts section ul{
+        width:75%;
+    }
+    #outer{
+        width:70%;
+    }
+    #outer li{
+        text-align: left;
+    }
+
 
     /************* CSS for Something New ******************/
     .snImage {
