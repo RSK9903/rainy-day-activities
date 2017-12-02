@@ -6,41 +6,90 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <title>Something New</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>    
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a href="./index.html">
-                    <img src="./images/ideacloud.png" id = "test" alt="A cloud">
+                    <img src="./images/ideacloud.png" alt="Idea Cloud" id="test">
                 </a>
         </div>
         <div class="nav-links">
-            <ul>
+            <ul id="drop">
                 <li>
-                    <a href="./board_games.html">Board Games</a>
+                    <a href="./board_games.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Board Games</a>
+                    <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                        <a href="board_games.html#apples2apples">Apples to Apples</a>
+                        <a href="board_games.html#monopoly">Monopoly</a>
+                        <a href="board_games.html#clue">Clue</a>
+                        <a href="board_games.html#candyLand">Candy Land</a>
+                        <a href="board_games.html#scrabble">Scrabble</a>
+                        <a href="board_games.html#sorry">Sorry</a>
+                        <a href="board_games.html#chutesAndLadders">Chutes and Ladders</a>
+                        <a href="board_games.html#gameOfLife">The Game of Life</a>
+                        <a href="board_games.html#guessWho">Guess Who</a>
+                        <a href="board_games.html#battleShip">Battleship</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="./card_games.html">Card Games</a>
+                    <a href="./card_games.html" onmouseover="mopen('m2')" onmouseout="mclosetime()">Card Games</a>
+                    <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                        <a href="card_games.html#standard">Standard Deck</a>
+                        <a href="card_games.html#chips">Poker</a>
+                        <a href="card_games.html#special">Special Deck</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="./activities.html">Activities</a>
+                    <a href="./activities.html" onmouseover="mopen('m3')" onmouseout="mclosetime()">Activities</a>
+                    <div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="activities.html#pingpong">Ping Pong</a>
+                    <a href="activities.html#billiards">Billiards</a>
+                    <a href="activities.html#badminton">Badminton</a>
+                    <a href="activities.html#basketball">Basketball</a>
+                    <a href="activities.html#swimming">Swimming</a>
+                    <a href="activities.html#bowling">Bowling</a>
+                    <a href="activities.html#boxing">Boxing</a>
+                    <a href="activities.html#squash">Squash</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="./arts_and_crafts.html">Arts &amp; Crafts</a>
+                    <a href="./arts_and_crafts.html" onmouseover="mopen('m4')" onmouseout="mclosetime()">Arts &amp; Crafts</a>
+                    <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="arts_and_crafts.html#DIY">DIY Room Decor</a>
+                    <a href="arts_and_crafts.html#drawing">Drawing</a>
+                    <a href="arts_and_crafts.html#jewelry">Jewelry Making</a>
+                    <a href="arts_and_crafts.html#knitting">Knitting</a>
+                    <a href="arts_and_crafts.html#origami">Origami</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="./productivity.html">Productivity</a>
+                    <a href="./productivity.html" onmouseover="mopen('m5')" onmouseout="mclosetime()">Productivity</a>
+                    <div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="productivity.html#cleaning">Clean Your Room</a>
+                    <a href="productivity.html#laundry">Laundry</a>
+                    <a href="productivity.htmlcooking">Cooking</a>
+                    <a href="productivity.html#grocery">Grocery Shopping</a>
+                    <a href="productivity.html#hw">Homework</a>
+                    <a href="productivity.html#money">Manage Money</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="./something_new.html">Something New</a>
+                    <a href="./something_new.html" onmouseover="mopen('m6')" onmouseout="mclosetime()">Something New</a>
+                    <div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="something_new.html#podcasts">Podcasts</a>
+                    <a href="something_new.html#code">Coding</a>
+                    <a href="something_new.html#instruments">Instruments</a>
+                    </div>
                 </li>
             </ul>
         </div>
     </header>
     <main class="SN">
-        <h1 id="TSN"><img src="./images/new_icon.png" width="5%" height="5%">Try Something New<img src="./images/new_icon.png" width="5%" height="5%"></h1>
-        <div class='tableOfContents'>
+        <h1 id="TSN"><img src="./images/new_icon.png">Try Something New<img src="./images/new_icon.png"></h1>
+        <h3>Expand your horizons</h3>
+        <!-- <div class='tableOfContents'>
             <table>
                 <tr>
                     <th>Table of Contents</th>
@@ -55,87 +104,88 @@
                     <td><a href="#instruments">Learn to Play an Instrument</a></td>
                 </tr>
             </table>
-        </div>
-            <section>
-                <a name="podcasts">
-                    <div class="podcasts">
-                        <h2> Podcasts</h2>
-                        <p class='intro'> Never listened to a podcast before? Well now is a good time to start! Linked below are serveral of our favorite family friendly podcasts.</p>
-                                <div class='SYSK'>
-                                <img class="snImage" src="images/sysk.jpg">
-                                    <div class="description">
-                                   <a href="https://www.stuffyoushouldknow.com/podcasts"><strong>Stuff You Should Know</strong></a> <p>
-                                    These guys cover it all, from the history of beer to Supreme Court Nominations, co-hosts Josh and Chuck will have something that interests you. </p>
-                                    </div>
-                                </div>
-                                <div class='SYSK'>
-                                <img class="snImage" src='images/helloInternet.png'>
-                                    <div class="description">
-                                    <a href="http://www.hellointernet.fm/"><strong>Hello Internet</strong></a>
-                                    <p>Youtube creators CGP Grey and Brady Haran launch themselves into the latest pop culture and news </p>
-                                    </div>
-                                </div>
-                                <div class='SYSK'>
-                                <img class="snImage" src='images/99%25.jpg'>
-                                    <div class="description">
-                                    <a href="https://99percentinvisible.org/"><strong>99% Invisible</strong></a>
-                                    <p>Roman Mars explodes the hidden side of everything. From unpleasent design to Universal Basic Income you will be surprised at the immense thought and composition that goes into the world around you.</p>
-                                    </div>
-                                </div>
+        </div> -->
+        <section>
+            <a name="podcasts"></a>
+                <div class="podcasts">
+                    <h2> Podcasts</h2>
+                    <p class='intro'> Never listened to a podcast before? Well now is a good time to start! Linked below are serveral of our favorite family friendly podcasts.</p>
+                    <div class='SYSK'>
+                            <img class="snImage" src="images/sysk.jpg">
+                        <div class="description">
+                            <a href="https://www.stuffyoushouldknow.com/podcasts"><strong>Stuff You Should Know</strong></a>
+                            <p>
+                                These guys cover it all, from the history of beer to Supreme Court Nominations, co-hosts Josh and Chuck will have something that interests you. </p>
                         </div>
-                </section>
-                <section>
-                    <a name="code">
-                        <div class="learnToCode">
-                        <h2>Learn to Code</h2>
-                        <div class='SYSK'>
-                            <img class="snImage" src='images/python.png'>
-                            <div class="description">
+                    </div>
+                    <div class='SYSK'>
+                        <img class="snImage" src='images/helloInternet.png'>
+                        <div class="description">
+                            <a href="http://www.hellointernet.fm/"><strong>Hello Internet</strong></a>
+                            <p>Youtube creators CGP Grey and Brady Haran launch themselves into the latest pop culture and news </p>
+                        </div>
+                    </div>
+                    <div class='SYSK'>
+                        <img class="snImage" src='images/99%25.jpg'>
+                        <div class="description">
+                            <a href="https://99percentinvisible.org/"><strong>99% Invisible</strong></a>
+                            <p>Roman Mars explodes the hidden side of everything. From unpleasent design to Universal Basic Income you will be surprised at the immense thought and composition that goes into the world around you.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <a name="code"></a>
+                <div class="learnToCode">
+                    <h2>Learn to Code</h2>
+                    <div class='SYSK'>
+                        <img class="snImage" src='images/python.png'>
+                        <div class="description">
                             <a href="https://www.codecademy.com/learn/learn-python"><strong>Python</strong></a>
                             <p>Python is a great inroductory language. The syntax is forgiving but it is still a powerful tool for any programmer</p>
-                            </div>
                         </div>
-                        <div class='SYSK'>
+                    </div>
+                    <div class='SYSK'>
                         <img class="snImage" src='images/html.png'>
-                            <div class="description">
+                        <div class="description">
                             <a href="https://www.codecademy.com/learn/learn-html"><strong>HTML</strong></a>
                             <p>
                                 The foundation of the web, HTML is used to define the content of a webpages. Maybe you could make your own rainy day page? Not as good as this one of course but still... </p>
-                            </div>
                         </div>
-                        <div class='SYSK'>
+                    </div>
+                    <div class='SYSK'>
                         <img class="snImage" src='images/java.jpg'>
                         <div class="description">
                             <a href="https://www.codecademy.com/learn/learn-java"><strong>Java</strong></a>
                             <p>Looking for something a little more powerful? Java is the language for you.
                                 <br>Old but reliable, Java is a popular choice for software developers </p>
-                            </div>
                         </div>
-                        </div>
-                    </section>
+                    </div>
+                </div>
+        </section>
         <section>
             <a name="instruments">
                 <div class="instrument">
                     <h2>Learn to Play an Instrument</h2>
                     <p class='intro'>We all have instruments sitting around that we've always wanted to play. Now's the chance!</p>
-                        <div class='SYSK'>
-                            <img class="snImage" src="images/GuitareClassique5.png">
-                            <div class="description">
-                                <a href="https://www.youtube.com/watch?v=llNuwhZWXKA"><strong>Guitar</strong></a>
-                            </div>
+                    <div class='SYSK'>
+                        <img class="snImage" src="images/GuitareClassique5.png">
+                        <div class="description">
+                            <a href="https://www.youtube.com/watch?v=llNuwhZWXKA"><strong>Guitar</strong></a>
                         </div>
-                        <div class='SYSK'>
-                            <img class="snImage" src="images/download.png">
-                            <div class="description">
-                                <a href='https://www.youtube.com/watch?v=vphWgqbF-AM'><strong>Piano</strong></a>
-                            </div>
+                    </div>
+                    <div class='SYSK'>
+                        <img class="snImage" src="images/download.png">
+                        <div class="description">
+                            <a href='https://www.youtube.com/watch?v=vphWgqbF-AM'><strong>Piano</strong></a>
                         </div>
-                        <div class='SYSK'>
-                            <img class="snImage" src="images/kangaroo1a.jpg">
-                            <div class="description">
-                                <a href="https://www.youtube.com/watch?v=F1hnDwjuLGM&t=2s"><strong>Didgeridoo</strong></a>
-                            </div>
+                    </div>
+                    <div class='SYSK'>
+                        <img class="snImage" src="images/kangaroo1a.jpg">
+                        <div class="description">
+                            <a href="https://www.youtube.com/watch?v=F1hnDwjuLGM&t=2s"><strong>Didgeridoo</strong></a>
                         </div>
+                    </div>
                 </div>
         </section>
         <hr>

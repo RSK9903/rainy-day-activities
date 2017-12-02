@@ -4,8 +4,6 @@
     font-family: sans-serif;
 }
 
-#test{width:175px;height: auto} /*This controls the new logo*/
-
 /************* CSS for header *************/
 header,
 header .logo,
@@ -28,24 +26,61 @@ header {
 
 header .logo img {
     margin: .5em;
-    width: 50px;
+    width: 175px;
+    height: auto;
 }
 
-header .nav-links li a {
+header .nav-links li>a {
     align-items: center;
     padding: 0 12px;
     text-decoration: none;
     color: white;
     background-color: black;
     height: 50px;
+    display:block;
 }
 
-header .nav-links li a:hover {
-    background-color: grey;
+header .nav-links li>a:hover {
+    background-color: grey;/*
     transform: scale(1.1, 1.1);
-    transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;*/
 }
 
+#drop li{
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#drop div {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top:50px;
+    padding: 0;
+    background: white;
+    border: black;
+    align-items: flex-start;
+    box-shadow: 3px 3px 15px 1px grey;
+}
+
+#drop div a {
+    display: flex;
+    padding: 5px 10px;
+    width: auto;
+    white-space: nowrap;
+    text-align: left;
+    text-decoration: none;
+    background: white;
+    color: black;
+    height:25px;
+    align-items: center;
+}
+
+#drop div a:hover {
+    background-color: rgb(63, 157, 214); 
+    color: white;
+}
 
 /************* CSS for footer *************/
 footer,
@@ -142,7 +177,7 @@ body {
 
 .categories ul li a:hover {
     box-shadow: 0 0 5px 2px darkblue;
-    transform: scale(1.01, 1.01);
+    /*transform: scale(1.1, 1.1);*/
     transition: all 0.2s ease-out;
 }
 
@@ -242,6 +277,8 @@ body {
 .boardGames, .boardGames section {
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .boardGames section {
@@ -250,7 +287,7 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-    width: 800px;
+    width: 750px;
     height: 400px;
     flex-direction: row;
     justify-content: space-around;
@@ -258,7 +295,8 @@ body {
 
 .boardGames h1 {
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 .boardGames section div div {
@@ -281,8 +319,16 @@ body {
 }
 
 .boardGames h1 img {
-    width: 40px;
-    height: 40px;
+    /*width: 40px;*/
+    height: 50px;
+    margin: 0 5px;
+}
+
+/*"Roll the dice..." added id name for easier styling*/
+#tagline {
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 .boardGames section > div {
@@ -339,17 +385,34 @@ body {
     display: flex;
 }
 
-.CardGames main, .CardGames h1, .CardGames h3, .CardGames table, .CardGames h2, .CardGames bs{
+.CardGames main, .CardGames h1, .CardGames h3, .CardGames table, .CardGames h2, .CardGames .bs{
     display:flex;
     justify-content: center;
 }
-.CardGames main, .CardGames h1, .CardGames table{
+/*.CardGames main, .CardGames table{
    margin-top:5%;
+}*/
+
+.CardGames h1{
+    margin-top: 20px;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.CardGames h3{
+    font-weight:normal; 
+    font-style: italic;
+    margin-top: 10px;
 }
 
 .CardGames, .CardGames section {
     flex-direction: column;
     align-items: center;
+    padding: 0;
+}
+
+.CardGames section {
+    margin-bottom: 35px;
 }
 
 .bs, .gofish, .oldmaid, .rummy, .spades, .solitaire, .spit, .war, .blackjack, .poker, .uno{
@@ -358,31 +421,26 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-    width: 800px;
+    width: 750px;
     height: 400px;
     flex-direction: row;
     justify-content: space-around;
 
 }
-.CardGames p{
+.CardGames p {
     margin-left:1%;
     margin-right: 1%;
-
-
-}
-.CardGames h1 {
-    justify-content: center;
-    margin-top: 5%;
 }
 
 .CardGames h2 {
-    margin-top:2%;
+    margin-top:10px;
 }
 
 .description {
     padding-bottom: 20px;
     text-shadow: 2px 2px 2px grey;
-
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
 }
 
 .CardGames section div h2 {
@@ -390,8 +448,7 @@ body {
 }
 
 .CardGames h1 img {
-    max-width: 80px;
-    max-height: 80px;
+    height: 45px;
 }
 
 .CardGames section > div {
@@ -461,14 +518,12 @@ body {
 }
 
 .activities section {
-    margin: 1em 0 1em 0;
+    margin: 15px 0;
     border: solid 1pt black;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 2px grey;
-    width: 800px;
-    height: 520px;
-    width: 800px;
+    width: 750px;
     height: 400px;
     flex-direction: row;
     justify-content: space-around;
@@ -476,7 +531,8 @@ body {
 
 .activities h1 {
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 .activities section div div {
@@ -500,8 +556,14 @@ body {
 }
 
 .activities h1 img {
-    width: 40px;
-    height: 40px;
+    height: 45px;
+    margin: 0 5px;
+}
+
+.activities h3 {
+    font-weight: normal; 
+    font-style: italic; 
+    margin-top: 10px;
 }
 
 .activities section > div {
@@ -542,6 +604,47 @@ body {
     background-color: limegreen;
 }
 
+/************* CSS for arts and crafts and productivity ***************/
+.arts{margin-left: auto; margin-right: auto; width:750px;}
+.arts a:link{color:black; text-decoration: underline}
+.arts a:visited{color:black; text-decoration: underline}
+.arts a:hover{color: blue; font-style: italic; font-weight: bold; text-decoration: underline;}
+.arts a:active{color:rgb(152,49,255); text-decoration: none}
+.strong{font-weight: bold;}
+
+#title{margin-top: 20px;}
+#title h1{display:flex; justify-content: center; font-size:40px;margin-bottom: 10px;}
+#title img{height: 45px; margin: 0 3px;}
+#title h3{display:flex; justify-content: center; font-weight:normal; font-style: italic;}
+
+.arts section{margin-top:15px; line-height: 2; border:solid 1pt black; border-radius: 10px; background-color:white; box-shadow: 5px 5px 5px 2px grey; padding-bottom: 15px; padding-top:15px; margin-bottom: 20px;}
+.arts section figure{display:flex; justify-content: center; margin-bottom:20px; margin-top: 5px;}
+.arts section img{max-width: 100%; max-height:300px; height: auto;}
+.arts section h2{display:flex; justify-content: center; }
+.arts h2+p{margin-bottom: 10px}
+.arts p{text-align: center}
+.arts section h3{display: flex; justify-content: center; }
+.arts section ul {display:flex; flex-direction:column; margin-bottom: 10px; width: 85%;margin-left: auto; margin-right: auto;}
+.arts section ul li {list-style-type: none; text-align: center; font-size:18px;}
+
+.DIY ul li {text-align:left;}
+#articles li{text-align: center; font-size:16px;}
+#articles a:link{text-decoration:none;}
+#articles a:visited{text-decoration: none;}
+
+#sketchIdeas li{font-weight:bold;}
+#bttop{font-size:20px;}
+#bttop a:link{text-decoration: none}
+
+#ita{font-style: italic;}
+#pro p{width:90%; margin-left: auto; margin-right: auto}
+#pro section figure{flex-direction: column; margin-top: 15px; margin-bottom: 10px}
+#pro section figure img{height:250px; align-self: center}
+#pro figcaption{text-align: center;margin-top:5px;}
+#outer{margin-left: auto; margin-right:auto;width:60%; }
+#outer li{text-align:justify;list-style-type: disc; font-size:16px;}
+#inner{margin:0 0 0 5%; width:100%;}
+#inner li{text-align: left; list-style-type: circle;}
 
 /************* CSS for something new *************/
 /*Anchor*/
@@ -555,7 +658,7 @@ body {
 .SN section {
     display: flex;
     text-align: center;
-
+    margin-top: 20px;
 }
 
 .tableOfContents {
@@ -563,11 +666,21 @@ body {
     margin: 20px 0px 20px 0px;
 }
 
-.snImage {
+.snImage{
     width:200px;
     height: 200px;
     float:left;
     border-radius: 10%;
+}
+
+.snImage img{
+    width: 200px;
+}
+
+.SN h3 {
+    font-weight: normal; 
+    font-style: italic; 
+    margin-top: 10px;
 }
 
 .tableOfContents table tr th {
@@ -581,8 +694,14 @@ body {
 }
 
 #TSN {
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
+    font-size: 40px;
+    display:flex;
+}
+
+#TSN>img{
+    height: 45px;
 }
 
 .description {
@@ -599,6 +718,7 @@ body {
     border: solid 1px black;
     box-shadow: 2px 2px 2px 2px grey;
     margin-bottom: 10px;
+    /*width: 750px;*/
 
 }
 .learnToCode {
@@ -619,7 +739,7 @@ body {
     border: solid 1px black;
     box-shadow: 2px 2px 2px 2px grey;
     margin-bottom: 10px;
-    
+
 }
 
 .intro {
@@ -632,7 +752,7 @@ p {
 }
 
 /************* CSS for mobile devices *************/
-
+ /*CSS for tablets*/
 @media only screen and (min-width: 481px) and (max-width: 800px) {
     /************* CSS for tablet header *************/
     header {
@@ -642,7 +762,7 @@ p {
 
     header .logo img {
         margin: 1em;
-        width: 40px;
+        width: 130px;
     }
 
     header .nav-links li a {
@@ -777,23 +897,69 @@ p {
         width: 160px;
     }
 
+    /**********  CSS for tablet arts/productivity  ********/
+    #title h1 {
+        font-size: 26px;
+    }
 
-    /************ CSS for Somrthing new ********************/
-    .SN section div {
-        flex-direction: column;
-        align-items: center;
+    #title img {
+        height:30px;
     }
     
+    #title h3 {
+        font-size: medium;
+    }
+
+    .arts{
+        width:90%;
+    }
+    .arts section p{
+        width:90%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .arts section figure{
+        margin-bottom: 10px;
+    }
+    .arts section img{
+        max-width: 100%; 
+        height:auto; 
+        max-height: 200px;
+    }
+    #outer{
+        width:80%;
+    }
+
+    /************ CSS for Something new Tablet ********************/
     .snImage {
         width:150px;
         height: 150px;
     }
+
+    .SN section div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #TSN {
+        font-size: 26px;
+    }
+
+    #TSN img {
+        height:30px;
+    }
+
+    .SN h3 {
+        font-size: medium;
+    }
+
     .description {
         width:200px;
-        margin: 30px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
     }
     .SYSK {
         width: 400px;
+        padding: 0px 0px 0px 0px;
         }
     .podcasts {
         border-bottom: 2px solid black;
@@ -815,7 +981,7 @@ p {
 
     header .logo img {
         margin: 1em;
-        width: 30px;
+        width: 100px;
     }
 
 
@@ -868,12 +1034,12 @@ p {
     }
 
     .CardGames h3 {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .CardGames h1 img {
         width: 20px;
-        height: 70px;
+        height: 20px;
     }
 
     .CardGames section, .CardGames ul, .CardGames li {
@@ -911,26 +1077,86 @@ p {
         justify-content:center;
     }
 
-    /************* CSS for Something New ******************/
+
+/****** CSS for mobile arts/productivity *******/
+    .arts p, .arts figcaption, #outer li, #articles li, .arts section ul li{
+        font-size:14px;
+    }
+    #title h1 {
+        font-size: 20px;
+    }
+    #title img {
+        height:20px;
+    }
+    #title h3 {
+        font-size: 10px;
+    }
+    #bttop{
+        font-size:16px;
+    }
+    .arts{
+        width:90%;
+    }
+    .arts section p{
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .arts section figure{
+        margin-bottom: 0px;
+        width:95%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .arts section img{
+        max-width: 100%;
+        height:auto;
+        max-height: 150px;
+    }
+    .arts section ul{
+        width:75%;
+    }
+    #outer{
+        width:70%;
+    }
+    #outer li{
+        text-align: left;
+    }
+
+
+    /************* CSS for mobile Something New ******************/
     .snImage {
         width:100px;
         height: 100px;
         align-content: center;
     }
-    .description {
-        width:230px;
-        margin: 20px 5px 5px 10px;
-        text-align: center;
+
+    .SN section div {
+        width: 360px;
+        flex-direction: column;
+        align-items: center;
     }
-    .SYSK {
-        width: 400px;
-        }
+
+    #TSN {
+        font-size: 26px;
+    }
+
+    #TSN img {
+        height:30px;
+    }
+
+    .SN h3 {
+        font-size: medium;
+    }
+
     .podcasts {
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
     }
     .learnToCode {
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
     }
+}
+
     /************* CSS for mobile board games *************/
     .boardGames h1 {
         font-size: 20px;
@@ -991,7 +1217,7 @@ p {
 
 
 
-} /********* MOBIL VERSION ENDS HERE **********/
+} /********* MOBILE VERSION ENDS HERE **********/
 
 
 
@@ -1017,7 +1243,9 @@ p {
 
 .about h2 {
     text-decoration: underline;
+    margin-top: 20px;
     margin-bottom: 1em;
+    font-size: 35px;
 }
 
 .about ul {
@@ -1054,13 +1282,15 @@ p {
 }
 
 .contact h1 {
-    margin-bottom: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .contact > div {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 20px;
 }
 
 /************* CSS for help page *************/
@@ -1072,6 +1302,8 @@ p {
 
 .help h1 {
     font-style: italic;
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 /************* CSS for site map page *************/
@@ -1096,6 +1328,11 @@ p {
 
 .map div {
     margin-bottom: 1em;
+}
+
+.map h1 {
+    margin: 20px;
+    font-size: 40px;
 }
 
 .map div ul li a {
