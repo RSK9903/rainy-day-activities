@@ -32,9 +32,8 @@ header .logo img {
     height: auto;
 }
 
-header .nav-links li a {
+header .nav-links li>a {
     align-items: center;
-    display: block;
     padding: 0 12px;
     text-decoration: none;
     color: white;
@@ -42,15 +41,21 @@ header .nav-links li a {
     height: 50px;
 }
 
-header .nav-links li a:hover {
+header .nav-links li>a:hover {
     background-color: grey;
-    transform: scale(1.1, 1.1);
+    /*transform: scale(1.1, 1.1);*/
     transition: all 0.2s ease-out;
 }
 
+#drop li{
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 130px;
+}
+
 #drop div {
-    position: static;
-    display:block;
+    /*align-items: flex-start;*/
+    position: sticky;
     visibility: hidden;
     margin: 0;
     padding: 0;
@@ -60,7 +65,6 @@ header .nav-links li a:hover {
 
 #drop div a {
     position: relative;
-    display: block;
     margin: 0;
     padding: 5px 10px;
     width: auto;
@@ -71,9 +75,9 @@ header .nav-links li a:hover {
     color: rgb(94, 115, 101);
 }
 
-#sddm div a:hover {
-    background:rgb(108, 181, 96); 
-    color: #FFF;
+#drop div a:hover {
+    background-color: black; 
+    color: white;
 }
 
 /************* CSS for footer *************/
