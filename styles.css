@@ -113,6 +113,21 @@ footer .foot-nav li a {
     color: grey;
 }
 
+footer .suggestion-box button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px grey;
+    padding: .5em;
+    margin: .5em;
+}
+
+footer .suggestion-box button:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease-out;
+    box-shadow: 0 0 2px 1px darkblue;
+}
 
 /************* CSS for 'index.html' *************/
 .index,
@@ -747,7 +762,7 @@ body {
     margin-top:5px;
     margin-bottom: 20px;
 }
-p {
+.SN p {
     text-align: center;
 }
 
@@ -1155,7 +1170,6 @@ p {
     .learnToCode {
         border-bottom: 2px solid black;
     }
-}
 
     /************* CSS for mobile board games *************/
     .boardGames h1 {

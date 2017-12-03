@@ -1,5 +1,5 @@
 // window.addEventListener("load",function(){
-// 	var 
+// 	var
 
 // });
 	var timeout	= 100;
@@ -8,7 +8,7 @@
 
 	// open hidden layer
 	function mopen(id)
-	{	
+	{
 	// cancel close timer
 	mcancelclosetime();
 
@@ -43,7 +43,7 @@
 	}
 
 	// close layer when click-out
-	//document.onclick = mclose; 
+	//document.onclick = mclose;
 
 	// const mq = window.matchMedia("(max-width:480px)");
 	// if (mq.matches) {
@@ -72,7 +72,7 @@
 	// mql.addListener(mediaqueryresponse) // attach listener function to listen in on state changes
 
 	// if (matchMedia) {
-	  	
+
 	// }
 	// const mq = window.matchMedia("(max-width: 480px)");
 	//   	mq.addListener(WidthChange);
