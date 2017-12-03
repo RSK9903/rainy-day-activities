@@ -129,6 +129,50 @@ footer .suggestion-box button:hover {
     box-shadow: 0 0 2px 1px darkblue;
 }
 
+/************* CSS for 'form.html' *************/
+
+.sugg-body,
+.suggestions,
+.sugg-body form {
+    display: flex;
+}
+
+.sugg-body {
+    background-color: rgb(50, 50, 50);
+}
+
+.suggestions {
+    margin: auto;
+    margin-top: 70px;
+    background-color: lightgrey;
+    width: 50%;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.sugg-body form {
+    flex-direction: column;
+    align-items: center;
+}
+
+.sugg-body input {
+    margin: 1em 0 1em 0;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px;
+}
+
+.sugg-body h1 {
+    border-bottom: solid 1px grey;
+    width: 80%;
+    text-align: center;
+    padding: .5em 0 .5em 0;
+}
+
 /************* CSS for 'index.html' *************/
 .index,
 .boardGames,
