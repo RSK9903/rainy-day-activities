@@ -42,6 +42,10 @@
 	}
 	}
 
+	var submit = document.getElementById('button');
+	submit.addEventListener("click", function(e) {
+		alert("Thank You!");
+	});
 	// close layer when click-out
 	//document.onclick = mclose;
 
