@@ -9,21 +9,29 @@
 <body class="sugg-body">
     <main class="suggestions">
         <h1>Suggestions</h1>
-        <form method="post">
+        <form method="post" id="textbox">
         	<div>
-        		<input type="text" name="first-name" placeholder="first name">
+        		<input type="text" name="first-name" placeholder="first name" required>
         	</div>
         	<div>
-        		<input type="text" name="last-name" placeholder="last name">
+        		<input type="text" name="last-name" placeholder="last name" required>
         	</div>
             <div>
-            	<input type="text" name="category" placeholder="category">
+            	<input type="text" name="category" placeholder="category" required>
             </div>
             <div>
-            	<input type="text" name="activity" placeholder="activity">
+            	<input type="text" name="activity" placeholder="activity" required>
+            </div>
+            <div class="comments">
+            	<textarea placeholder="comments">
+            	</textarea>
+            </div>
+            <div>
+            	<input id="button" type="reset" value="Submit">
             </div>
         </form>
     </main>
+    <script type="text/javascript" src="./suggestion.js"></script>
 </body>
 
 </html>

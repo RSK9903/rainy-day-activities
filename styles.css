@@ -150,6 +150,7 @@ footer .suggestion-box button:hover {
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
 .sugg-body form {
@@ -171,6 +172,24 @@ footer .suggestion-box button:hover {
     width: 80%;
     text-align: center;
     padding: .5em 0 .5em 0;
+}
+
+.sugg-body #button {
+    margin-top: 2em;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.sugg-body #button:hover {
+    background-color: lightblue;
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease-out;
+}
+
+.sugg-body .comments textarea {
+    height: 100px;
+    width: 300px;
 }
 
 /************* CSS for 'index.html' *************/
