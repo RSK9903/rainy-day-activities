@@ -133,7 +133,8 @@ footer .suggestion-box button:hover {
 
 .sugg-body,
 .suggestions,
-.sugg-body form {
+.sugg-body form,
+.sugg-body .button-container {
     display: flex;
 }
 
@@ -144,9 +145,10 @@ footer .suggestion-box button:hover {
 .suggestions {
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 40px;
     background-color: lightgrey;
     width: 50%;
-    height: 500px;
+    height: 560px;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
@@ -155,10 +157,10 @@ footer .suggestion-box button:hover {
 
 .sugg-body form {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.sugg-body input {
+.sugg-body .text input {
     margin: 1em 0 1em 0;
     width: 300px;
     height: 40px;
@@ -178,13 +180,17 @@ footer .suggestion-box button:hover {
     padding: .5em 0 .5em 0;
 }
 
+.sugg-body .button-container {
+    margin-top: 1em;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .sugg-body #button {
-    margin-top: 2em;
     width: 80px;
     height: 30px;
     border-radius: 5px;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 .sugg-body #button:hover {

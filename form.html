@@ -12,12 +12,16 @@
         <h1>Suggestions</h1>
         <form id="textbox" method="get" onsubmit="submission(); return false;">
         	<div class="text">
-        		<input id="first-name" type="text" name="first-name" placeholder="First name" required onfocus="clear_input('first-name')" onblur="revert('first-name', 'First name')"/>
+        		<input id="first-name" type="text" name="first-name" placeholder="First name" required="true" onfocus="clear_input('first-name')" onblur="revert('first-name', 'First name')"/>
         	</div>
         	<div class="text">
-        		<input id="last-name" type="text" name="last-name" placeholder="Last name" required onfocus="clear_input('last-name')" onblur="revert('last-name', 'Last name')"/>
+        		<input id="last-name" type="text" name="last-name" placeholder="Last name" required="true" onfocus="clear_input('last-name')" onblur="revert('last-name', 'Last name')"/>
         	</div>
-            <div  class="text">
+            <div class="radio">
+                <input type="radio" name="category_choice" value="1" onselect="existingInput(); return false;">Existing Category<br/>
+                <input type="radio" name="category_choice" value="2" onclick="newInput(); return false;">New Category Suggestion
+            </div>
+            <div  class="text" id="category">
             	<input id="category" type="text" name="category" placeholder="Category" required onfocus="clear_input('category')" onblur="revert('category', 'Category')"/>
             </div>
             <div  class="text">
@@ -27,9 +31,9 @@
             	<textarea placeholder="comments">
             	</textarea>
             </div>
-            <div>
-            	<input id="button" type="reset" value="Reset" onclick="reset_form()"/>
-            	<input id="button" type="submit" value="Submit" onclick="submission()"/>
+            <div class="button-container">
+                <input id="button" type="reset" value="Reset" onclick="reset_form()"/>
+                <input id="button" type="submit" value="Submit" onclick="submission()"/>
             </div>
         </form>
     </main>

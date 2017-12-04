@@ -65,10 +65,13 @@
 	// 	}
 	// });
 
-	function reset_form() 
+	function reset_form()
 	{
 	  //reset form
 	  document.getElementById("textbox").reset();
+	}
+
+
 	}
 	// close layer when click-out
 	//document.onclick = mclose;
