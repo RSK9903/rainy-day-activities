@@ -9,25 +9,26 @@
 <body class="sugg-body">
     <main class="suggestions">
         <h1>Suggestions</h1>
-        <form method="post" id="textbox">
+        <form method="post" id="textbox" method="get">
         	<div>
-        		<input type="text" name="first-name" placeholder="first name" required>
+        		<input type="text" name="first-name" placeholder=" First name" required>
         	</div>
         	<div>
-        		<input type="text" name="last-name" placeholder="last name" required>
+        		<input type="text" name="last-name" placeholder=" Last name" required>
         	</div>
             <div>
-            	<input type="text" name="category" placeholder="category" required>
+            	<input type="text" name="category" placeholder=" Category" required>
             </div>
             <div>
-            	<input type="text" name="activity" placeholder="activity" required>
+            	<input type="text" name="activity" placeholder=" Activity" required>
             </div>
             <div class="comments">
             	<textarea placeholder="comments">
             	</textarea>
             </div>
             <div>
-            	<input id="button" type="reset" value="Submit">
+            	<input id="button" type="reset" value="Reset" onclick="reset_form()">
+            	<input id="button" type="submit" value="Submit" onclick="submission()">
             </div>
         </form>
     </main>

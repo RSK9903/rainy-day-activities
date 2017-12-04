@@ -42,10 +42,22 @@
 	}
 	}
 
-	var submit = document.getElementById('button');
-	submit.addEventListener("click", function(e) {
+	function submission(){
 		alert("Thank You!");
-	});
+	};
+
+	// var submit = document.getElementById('button');
+	// submit.addEventListener("click", function(e) {
+	// 	if(submit.value="Submit"){
+	// 		alert("Thank You!");
+	// 	}
+	// });
+
+	function reset_form() 
+	{
+	  //reset form
+	  document.getElementById("textbox").reset();
+	}
 	// close layer when click-out
 	//document.onclick = mclose;
 
