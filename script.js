@@ -55,8 +55,8 @@
 	function submission(){
 		alert("Thank You!");
 		var url = window.location.pathname;
-		window.location.pathname = url.replace("form.html", "index.html")
-	};
+		window.location.pathname = url.replace("form.html", "index.html");
+	}
 
 	// var submit = document.getElementById('button');
 	// submit.addEventListener("click", function(e) {
@@ -71,8 +71,6 @@
 	  document.getElementById("textbox").reset();
 	}
 
-
-	}
 	// close layer when click-out
 	//document.onclick = mclose;
 
