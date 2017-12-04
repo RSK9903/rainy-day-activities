@@ -125,40 +125,36 @@
 	// }
 function handleFormSubmit() {
     if (window.event) window.event.preventDefault();
-	// Get values of inputs
-	// Pass values to addNewPost()
-    var username= document.getElementById("input-username").value ;
-    var caption= document.getElementById("input-caption").value ;
-    var picture= document.getElementById("input-picture").value ;
 
-    addNewPost(username,caption,fileLocations[picture]);
+    var category= document.getElementById("category").value ;
+    var activity= document.getElementById("activity").value ;
+
+    addNewPost(category,activity);
 }
 
-/**
- * This function create the following div and append it to the #post-list element
-	<div class="post">
-		<span>{username}</span>
-		<img src="{img_src}" alt="{caption}">
-		<div id="post-overlay">
-			{caption}
-		</div>
-	</div>
- * 
- * Also, add a mouseover and mouseleave events to the post div for opacity 
- * transitions in the post-overlay div
- */
-function addNewPost(category, acitivity){       
+function addNewPost(category, activity){       
     var node = document.createElement("DIV");
     var node2 = document.createElement("DIV");
     var span= document.createElement("span");
- node.className="category";
-    node2.id="activity";
-    node2.innerText=category;
-    span.innerText = activity;
+ node.className="upload";
+    node2.id="post";
+    node2.innerText=activity;
+    span.innerText=category;
     node.appendChild(span);
     node.appendChild(node);
     node.appendChild(node2);
-    document.getElementById("category").appendChild(node);
+    document.getElementById("post").appendChild(node);
+    
+    
+    node.addEventListener("mouseover", function (e){
+        node2.style.transition = "opacity 0.5s";
+        node2.style.opacity = 1.0;
+});
+    node.addEventListener("mouseout", function (e) {
+        node2.style.transition = "opacity 0.5s";
+        node2.style.opacity = 0; 
+                          
+});
 
 
                           
@@ -170,7 +166,7 @@ function summarize()
 .fan-favorites.get
 
 .summary_wrapper.display
-  //Summarize all input entered from user and display in "summary-wrapper" div, which is by default hidden.
+ 
 }
 
 function reset_form() 
