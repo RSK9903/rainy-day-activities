@@ -167,6 +167,10 @@ footer .suggestion-box button:hover {
     box-shadow: 2px 2px 2px 1px;
 }
 
+.text input{
+    padding-left:10px;
+}
+
 .sugg-body h1 {
     border-bottom: solid 1px grey;
     width: 80%;

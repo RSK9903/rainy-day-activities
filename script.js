@@ -36,10 +36,20 @@
 	function mcancelclosetime()
 	{
 	  if(closetimer)
-	{
-		window.clearTimeout(closetimer);
-		closetimer = null;
+		{
+			window.clearTimeout(closetimer);
+			closetimer = null;
+		}
 	}
+
+	function clear_input(id){
+		var f = document.getElementById(id);
+		f.placeholder="";
+	}
+
+	function revert(id, place){
+		var r = document.getElementById(id);
+		r.placeholder= place;
 	}
 
 	function submission(){

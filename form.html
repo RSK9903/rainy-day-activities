@@ -10,17 +10,17 @@
     <main class="suggestions">
         <h1>Suggestions</h1>
         <form method="post" id="textbox" method="get">
-        	<div>
-        		<input type="text" name="first-name" placeholder=" First name" required>
+        	<div class="text">
+        		<input id="first-name" type="text" name="first-name" placeholder="First name" required onfocus="clear_input('first-name')" onblur="revert('first-name', 'First name')">
         	</div>
-        	<div>
-        		<input type="text" name="last-name" placeholder=" Last name" required>
+        	<div class="text">
+        		<input id="last-name" type="text" name="last-name" placeholder="Last name" required onfocus="clear_input('last-name')" onblur="revert('last-name', 'Last name')">
         	</div>
-            <div>
-            	<input type="text" name="category" placeholder=" Category" required>
+            <div  class="text">
+            	<input id="category" type="text" name="category" placeholder="Category" required onfocus="clear_input('category')" onblur="revert('category', 'Category')">
             </div>
-            <div>
-            	<input type="text" name="activity" placeholder=" Activity" required>
+            <div  class="text">
+            	<input id="activity" type="text" name="activity" placeholder="Activity" required onfocus="clear_input('activity')" onblur="revert('activity', 'Activity')">
             </div>
             <div class="comments">
             	<textarea placeholder="comments">
