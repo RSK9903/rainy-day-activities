@@ -90,7 +90,8 @@
             <br>
             <h2>What is your favorite activity?</h2>
             <br>
-            <form onsubmit="handleFormSubmit(); return false;">
+            <form>
+                <!-- onsubmit="handleFormSubmit(); return false;" -->
         <select name id= "category">
             <section class="category">
             <option>Board Games</option>
@@ -161,12 +162,11 @@
             </optgroup>
             </section>
             </select>
-                <!---<button>Submit</button>--->
-            </form>
+                <!-- <button>Submit</button> -->            </form>
             <section id="post"></section>
         <section id="reset_submit"/>
-        <input type="reset" value="Reset" onclick="reset_form()" >
-        <input type="submit" value="Submit" >
+        <!-- <input type="reset" value="Reset" onclick="reset_form()" > -->
+        <input type="submit" value="Submit" onclick="handleFormSubmit()">
       </section> <br/>
       <div id="summary_wrapper"/>
         <fieldset>

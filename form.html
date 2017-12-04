@@ -4,35 +4,35 @@
 <head>
     <title>Suggestions</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body class="sugg-body">
     <main class="suggestions">
         <h1>Suggestions</h1>
-        <form method="post" id="textbox" method="get">
+        <form id="textbox" method="get" onsubmit="submission(); return false;">
         	<div class="text">
-        		<input id="first-name" type="text" name="first-name" placeholder="First name" required onfocus="clear_input('first-name')" onblur="revert('first-name', 'First name')">
+        		<input id="first-name" type="text" name="first-name" placeholder="First name" required onfocus="clear_input('first-name')" onblur="revert('first-name', 'First name')"/>
         	</div>
         	<div class="text">
-        		<input id="last-name" type="text" name="last-name" placeholder="Last name" required onfocus="clear_input('last-name')" onblur="revert('last-name', 'Last name')">
+        		<input id="last-name" type="text" name="last-name" placeholder="Last name" required onfocus="clear_input('last-name')" onblur="revert('last-name', 'Last name')"/>
         	</div>
             <div  class="text">
-            	<input id="category" type="text" name="category" placeholder="Category" required onfocus="clear_input('category')" onblur="revert('category', 'Category')">
+            	<input id="category" type="text" name="category" placeholder="Category" required onfocus="clear_input('category')" onblur="revert('category', 'Category')"/>
             </div>
             <div  class="text">
-            	<input id="activity" type="text" name="activity" placeholder="Activity" required onfocus="clear_input('activity')" onblur="revert('activity', 'Activity')">
+            	<input id="activity" type="text" name="activity" placeholder="Activity" required onfocus="clear_input('activity')" onblur="revert('activity', 'Activity')"/>
             </div>
             <div class="comments">
             	<textarea placeholder="comments">
             	</textarea>
             </div>
             <div>
-            	<input id="button" type="reset" value="Reset" onclick="reset_form()">
-            	<input id="button" type="submit" value="Submit" onclick="submission()">
+            	<input id="button" type="reset" value="Reset" onclick="reset_form()"/>
+            	<input id="button" type="submit" value="Submit" onclick="submission()"/>
             </div>
         </form>
     </main>
-    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>

@@ -123,56 +123,56 @@
 	//   }
 
 	// }
-function handleFormSubmit() {
-    if (window.event) window.event.preventDefault();
+// function handleFormSubmit() {
+//     if (window.event) window.event.preventDefault();
 
-    var category= document.getElementById("category").value ;
-    var activity= document.getElementById("activity").value ;
+//     var category= document.getElementById("category").value ;
+//     var activity= document.getElementById("activity").value ;
 
-    addNewPost(category,activity);
-}
+//     addNewPost(category,activity);
+// }
 
-function addNewPost(category, activity){       
-    var node = document.createElement("DIV");
-    var node2 = document.createElement("DIV");
-    var span= document.createElement("span");
- node.className="upload";
-    node2.id="post";
-    node2.innerText=activity;
-    span.innerText=category;
-    node.appendChild(span);
-    node.appendChild(node);
-    node.appendChild(node2);
-    document.getElementById("post").appendChild(node);
+// function addNewPost(category, activity){       
+//     var node = document.createElement("DIV");
+//     var node2 = document.createElement("DIV");
+//     var span= document.createElement("span");
+//  node.className="upload";
+//     node2.id="post";
+//     node2.innerText=activity;
+//     span.innerText=category;
+//     node.appendChild(span);
+//     node.appendChild(node);
+//     node.appendChild(node2);
+//     document.getElementById("post").appendChild(node);
     
     
-    node.addEventListener("mouseover", function (e){
-        node2.style.transition = "opacity 0.5s";
-        node2.style.opacity = 1.0;
-});
-    node.addEventListener("mouseout", function (e) {
-        node2.style.transition = "opacity 0.5s";
-        node2.style.opacity = 0; 
+//     node.addEventListener("mouseover", function (e){
+//         node2.style.transition = "opacity 0.5s";
+//         node2.style.opacity = 1.0;
+// });
+//     node.addEventListener("mouseout", function (e) {
+//         node2.style.transition = "opacity 0.5s";
+//         node2.style.opacity = 0; 
                           
-});
+// });
 
 
                           
-});
+// });
                           
 
-function summarize() 
-{
-.fan-favorites.get
+// function summarize() 
+// {
+// .fan-favorites.get
 
-.summary_wrapper.display
+// .summary_wrapper.display
  
-}
+// }
 
-function reset_form() 
-{
-  //reset form
-}
+// function reset_form() 
+// {
+//   //reset form
+// }
 
 	// Create the parent post div
 	// Create a span for the user
@@ -181,5 +181,5 @@ function reset_form()
 	// Add all child elements (order matters)
 	// Add event listeners to post
 	// Add post element to post list
-}
+//}
 //var node= document.createElement("post");
