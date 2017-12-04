@@ -54,6 +54,8 @@
 
 	function submission(){
 		alert("Thank You!");
+		var url = window.location.pathname;
+		window.location.pathname = url.replace("form.html", "index.html")
 	};
 
 	// var submit = document.getElementById('button');
