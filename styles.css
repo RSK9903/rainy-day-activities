@@ -81,6 +81,10 @@ header .nav-links li>a:hover {
     color: white;
 }
 
+#mobile, #cloud {
+    display:none;
+}
+
 /************* CSS for footer *************/
 footer,
 footer .suggestion-box,
@@ -1169,7 +1173,11 @@ body {
         width: 23px;
     }
 
+<<<<<<< HEAD
     #other{
+=======
+    #other, #test{
+>>>>>>> 1314f42e52dd1e8ca29f681bbf0f3adbc60c9396
         display:none;
     }
 
@@ -1267,8 +1275,18 @@ body {
     }
 
     /************* CSS for mobile card games *************/
-    .CardGames h1, .CardGames h2 {
+    .CardGames h1{
         font-size: 20px;
+    }
+
+    .CardGames h2{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .CardGames p {
+        font-size: 12px;
+        text-align: center;
     }
 
     .CardGames h3 {
