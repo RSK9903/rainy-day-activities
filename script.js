@@ -77,7 +77,7 @@
 		var c = document.getElementById(id);
 		var d = document.getElementById(idtwo);
 		if(c.checked){
-			d.style.display="inline";
+			d.style.display="flex";
 		} else {
 			d.style.display="none";
 		}
