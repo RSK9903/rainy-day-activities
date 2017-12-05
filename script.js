@@ -84,13 +84,6 @@
 		}
 	}
 
-	// var submit = document.getElementById('button');
-	// submit.addEventListener("click", function(e) {
-	// 	if(submit.value="Submit"){
-	// 		alert("Thank You!");
-	// 	}
-	// });
-
 	function reset_form()
 	{
 	  //reset form
@@ -99,114 +92,42 @@
 	  document.getElementById("newCategory").style.display = "none";
 	}
 
-	// close layer when click-out
-	//document.onclick = mclose;
-
-	// const mq = window.matchMedia("(max-width:480px)");
-	// if (mq.matches) {
-	//   	// window width is at least 500px
-	//   	var t = document.getElementById("test");
-	// 	t.src="images/cloud.png";
-	// } else {
- //  		// window width is less than 500px
- //  		var t = document.getElementById("test");
-	// 	t.src="images/ideacloud.png";
-	// }
-
-	// function mediaqueryresponse(mql){
-	//  	if (mql.matches){ // if media query matches
-	//   		var t = document.getElementById("test");
-	// 		t.src="images/cloud.png";
-	//  	}
-	//  	else{
-	//  		var t = document.getElementById("test");
-	// 		t.src="images/ideacloud.png";
-	//  	}
-	// }
-
-	// var mql = window.matchMedia("screen and (max-width: 480px)")
-	// mediaqueryresponse(mql) // call listener function explicitly at run time
-	// mql.addListener(mediaqueryresponse) // attach listener function to listen in on state changes
-
-	// if (matchMedia) {
-
-	// }
-	// const mq = window.matchMedia("(max-width: 480px)");
-	//   	mq.addListener(WidthChange);
-	//   	WidthChange(mq);
-
-	// // media query change
-	// function WidthChange(mq) {
-	//   if (mq.matches) {
-	//  //    var pic = document.getElementsByClassName("logo");
-	//  //    var wut = pic[0].document.getElementsByTagName("img");
-	// 	// wut[0].src="images/cloud.png";
-	// 	var t = document.getElementById("test");
-	// 	t.src="images/cloud.png";
-	// 	t.style.height = "10px";
-	// 	t.style.width = "auto";
-	//   } else {
-	//     // window width is less than 500px
-	//     var t = document.getElementById("test");
-	// 	t.src="images/ideacloud.png";
-	//   }
-
-	// }
-// function handleFormSubmit() {
-//     var first_name = document.getElementById("first").value;
-//     var last_name = document.getElementById("last-name").value;
-//     var category= document.getElementById("category").value ;
-//     var activity= document.getElementById("activity").value ;
-   
-//     addNewPost(first_name, last_name, category,activity);
-// }
-
-// function addNewPost(fName, lName, category, activity){     
-//     var d = document.createElement("div");
-//     d.className="post";
-//     var sec = document.getElementById("summary");
-//     sec.appendChild(d);
-//     var p = document.createElement("p");
-//     p.id="name";
-//     var name = document.createTextNode(fName + " " + lName);
-//     p.appendChild(name);
-//     d.appendChild(p);
-//     var node2 = document.createElement("div");
-    
-//     var e= document.createElement("bla");
-//     e.className="show";
-//     var cat = document.getElementById("up");
-//     cat.appendChild(e);
-//     var z = document.createElement("z");
-//     z.id="suggestion";
-//     var suggestion=document.createTextNode(category + "" + activity);
-//     z.appendChild(suggestion);
-//     e.appendChild(z);
-    
-    
-   
- //    node.addEventListener("mouseover", function (e){
- //        node2.style.transition = "opacity 0.5s";
- //        node2.style.opacity = 1.0;
-	// });
- //    node.addEventListener("mouseout", function (e) {
- //        node2.style.transition = "opacity 0.5s";
- //        node2.style.opacity = 0; 
-                          
-	// });
-                          
-
-// function summarize() 
-// {
-// 	.fan-favorites.get;
-
-// 	.summary_wrapper.display;
- 
-// }
-
-// function reset_form() 
-// {
-//   //reset form
-// }
-
-// var node= document.createElement("post");
+	window.addEventListener('load',function(){
+		// var board_games = document.getElementById("bg");
+		bg.addEventListener('mouseover', function(e){
+			bg.style.backgroundColor="rgb(63, 157, 214)";
+		});
+		bg.addEventListener('mouseout',function(e){
+			bg.style.backgroundColor="white";
+		});
+		cg.addEventListener('mouseover', function(e){
+			cg.style.backgroundColor="rgb(63, 157, 214)";
+		});
+		cg.addEventListener('mouseout',function(e){
+			cg.style.backgroundColor="white";
+		});
+		act.addEventListener('mouseover', function(e){
+			act.style.backgroundColor="rgb(63, 157, 214)";
+		});
+		act.addEventListener('mouseout',function(e){
+			act.style.backgroundColor="white";
+		});
+		ac.addEventListener('mouseover', function(e){
+			ac.style.backgroundColor="rgb(63, 157, 214)";
+		});
+		ac.addEventListener('mouseout',function(e){
+			ac.style.backgroundColor="white";
+		});
+		p.addEventListener('mouseover', function(e){
+			p.style.backgroundColor="rgb(63, 157, 214)";
+		});
+		p.addEventListener('mouseout',function(e){
+			p.style.backgroundColor="white";
+		});
+		sn.addEventListener('mouseover', function(e){
+			sn.style.backgroundColor="rgb(63, 157, 214)";
+		});
+		sn.addEventListener('mouseout',function(e){
+			sn.style.backgroundColor="white";
+		});
+	});
