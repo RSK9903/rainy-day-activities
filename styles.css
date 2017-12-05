@@ -46,10 +46,9 @@ header .nav-links li>a:hover {
     transition: all 0.2s ease-out;*/
 }
 
-#drop li{
+#drop li {
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 #drop div {
@@ -64,7 +63,7 @@ header .nav-links li>a:hover {
     box-shadow: 3px 3px 15px 1px grey;
 }
 
-#drop div a {
+#drop div a{
     display: flex;
     padding: 5px 10px;
     width: auto;
@@ -165,6 +164,18 @@ footer .suggestion-box button:hover {
     align-items: center;
 }
 
+#newCategory{
+    margin-bottom: 20px;
+}
+
+.choice input, .radio input{
+    margin: 5px 0;
+}
+
+.radio {
+    margin-top: 10px;
+}
+
 .sugg-body .text input {
     margin: 1em 0 1em 0;
     width: 300px;
@@ -210,10 +221,6 @@ footer .suggestion-box button:hover {
     transform: scale(1.1, 1.1);
     transition: all 0.2s ease-out;
 }
-
-/*.sugg-body .comments {
-    margin-top: 10px;
-}*/
 
 .sugg-body .comments textarea {
     height: 100px;
@@ -883,8 +890,8 @@ body {
     }
 
     /************* CSS for tablet form.html *************/
-    .suggestion {
-        width: 500px;
+    .suggestions {
+        width: 80%;
     }
 
     .sugg-body .text input {
@@ -897,8 +904,8 @@ body {
         padding-left: 5px;
     }
 
-    .sugg-body .radio {
-        font-size: 12px;
+    .sugg-body .radio, .choice {
+        font-size: 15px;
     }
 
     .sugg-body p {
@@ -1140,14 +1147,40 @@ body {
     }
 
 
+    #mobile {
+        display: inline;
+        background-color: white;
+        border: white solid 1px;
+        border-radius: 20%;
+        padding: 0;
+    }
+
+    #cloud {
+        display:inline;
+    }
+
+    #cloud img {
+        height:25px;
+        width: auto;
+    }
+
+    #mobile img{
+        height:23px;
+        width: 23px;
+    }
+
+    #other{
+        display:none;
+    }
+
     /************* CSS for mobile footer *************/
     footer .foot-nav li a {
         font-size: 10px;
     }
 
     /************* CSS for mobile form.html *************/
-    .suggestion {
-        width: 500px;
+    .suggestions {
+        width: 80%;
     }
 
     .sugg-body .text {
@@ -1164,8 +1197,8 @@ body {
         padding-left: 5px;
     }
 
-    .sugg-body .radio {
-        font-size: 12px;
+    .sugg-body .radio, .choice, .sugg-body label{
+        font-size: 14px;
     }
 
     .sugg-body p {

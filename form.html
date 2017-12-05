@@ -44,20 +44,18 @@
                 <label>Name of Activity:</label>
             	<input id="activity" type="text" name="activity" placeholder="Activity Name" onfocus="clear_input('activity')" onblur="revert('activity', 'Activity Name')"> 
             </div>
+            <br>
             <div id="newCategory" class="text">
                 <label>New Category:</label>
                 <input id="category" type="text" name="category" placeholder="Category Name" onfocus="clear_input('category')" onblur="revert('category', 'Category Name')">
             </div>
-            <br>
             <div class="comments">
             	<textarea id="comment" name="comment" placeholder="Comments" onfocus="clear_input('comment')" onblur="revert('comment', 'Comments')"></textarea>
             </div>
-            <br>
             <div class="radio">
                 <input type="radio" name="robot" value="1"> I am not a robot <br>
                 <input type="radio" name="robot" value="2"> I am a robot
             </div>
-            <br>
             <div class="button-container">
                 <input id="button" type="button" value="Back to Home" onclick="redirect()">
                 <input id="button" type="reset" value="Reset" onclick="reset_form()">
