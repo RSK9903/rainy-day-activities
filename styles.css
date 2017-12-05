@@ -188,7 +188,7 @@ footer .suggestion-box button:hover {
 }
 
 .sugg-body #button {
-    width: 80px;
+    width: 100px;
     height: 30px;
     border-radius: 5px;
 }
@@ -201,7 +201,8 @@ footer .suggestion-box button:hover {
 
 .sugg-body .comments textarea {
     height: 100px;
-    width: 300px;
+    width: 290px;
+    padding: 10px;
 }
 
 /************* CSS for 'index.html' *************/

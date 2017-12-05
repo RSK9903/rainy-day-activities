@@ -58,6 +58,11 @@
 		window.location.pathname = url.replace("form.html", "index.html");
 	}
 
+	function redirect(){
+		var url = window.location.pathname;
+		window.location.pathname = url.replace("form", "index");
+	}
+
 	// var submit = document.getElementById('button');
 	// submit.addEventListener("click", function(e) {
 	// 	if(submit.value="Submit"){

@@ -18,20 +18,20 @@
         		<input id="last-name" type="text" name="last-name" placeholder="Last name" required="true" onfocus="clear_input('last-name')" onblur="revert('last-name', 'Last name')"/>
         	</div>
             <div class="radio">
-                <input type="radio" name="category_choice" value="1" onselect="existingInput(); return false;">Existing Category<br/>
+                <input type="radio" name="category_choice" value="1" onselect="existingInput(); return false;">Existing Category<br>
                 <input type="radio" name="category_choice" value="2" onclick="newInput(); return false;">New Category Suggestion
             </div>
-            <div  class="text" id="category">
+            <div class="text">
             	<input id="category" type="text" name="category" placeholder="Category" required onfocus="clear_input('category')" onblur="revert('category', 'Category')"/>
             </div>
-            <div  class="text">
+            <div class="text">
             	<input id="activity" type="text" name="activity" placeholder="Activity" required onfocus="clear_input('activity')" onblur="revert('activity', 'Activity')"/>
             </div>
             <div class="comments">
-            	<textarea placeholder="comments">
-            	</textarea>
+            	<textarea id="comment" name="comment" placeholder="Comments" onfocus="clear_input('comment')" onblur="revert('comment', 'Comments')"></textarea>
             </div>
             <div class="button-container">
+                <input id="button" type="button" value="Back to Home" onclick="redirect()">
                 <input id="button" type="reset" value="Reset" onclick="reset_form()"/>
                 <input id="button" type="submit" value="Submit" onclick="submission()"/>
             </div>
