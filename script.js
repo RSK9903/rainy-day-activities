@@ -62,13 +62,14 @@
 			alert("Please designate that you are not a robot.");
 			return false;
 		} else {
-			alert("Thank you for your suggestion!");
+			alert("Thank you for your suggestion! Redirecting you to the homepage.");
 			var url = window.location.pathname;
 			window.location.pathname = url.replace("form.html", "index.html");
 		}
 	}
 
 	function redirect(){
+		alert("Redirecting to homepage");
 		var url = window.location.pathname;
 		window.location.pathname = url.replace("form", "index");
 	}
@@ -151,36 +152,36 @@
 	//   }
 
 	// }
-function handleFormSubmit() {
-    var first_name = document.getElementById("first").value;
-    var last_name = document.getElementById("last-name").value;
-    var category= document.getElementById("category").value ;
-    var activity= document.getElementById("activity").value ;
+// function handleFormSubmit() {
+//     var first_name = document.getElementById("first").value;
+//     var last_name = document.getElementById("last-name").value;
+//     var category= document.getElementById("category").value ;
+//     var activity= document.getElementById("activity").value ;
    
-    addNewPost(first_name, last_name, category,activity);
-}
+//     addNewPost(first_name, last_name, category,activity);
+// }
 
-function addNewPost(fName, lName, category, activity){     
-    var d = document.createElement("div");
-    d.className="post";
-    var sec = document.getElementById("summary");
-    sec.appendChild(d);
-    var p = document.createElement("p");
-    p.id="name";
-    var name = document.createTextNode(fName + " " + lName);
-    p.appendChild(name);
-    d.appendChild(p);
-    var node2 = document.createElement("div");
+// function addNewPost(fName, lName, category, activity){     
+//     var d = document.createElement("div");
+//     d.className="post";
+//     var sec = document.getElementById("summary");
+//     sec.appendChild(d);
+//     var p = document.createElement("p");
+//     p.id="name";
+//     var name = document.createTextNode(fName + " " + lName);
+//     p.appendChild(name);
+//     d.appendChild(p);
+//     var node2 = document.createElement("div");
     
-    var e= document.createElement("bla");
-    e.className="show";
-    var cat = document.getElementById("up");
-    cat.appendChild(e);
-    var z = document.createElement("z");
-    z.id="suggestion";
-    var suggestion=document.createTextNode(category + "" + activity);
-    z.appendChild(suggestion);
-    e.appendChild(z);
+//     var e= document.createElement("bla");
+//     e.className="show";
+//     var cat = document.getElementById("up");
+//     cat.appendChild(e);
+//     var z = document.createElement("z");
+//     z.id="suggestion";
+//     var suggestion=document.createTextNode(category + "" + activity);
+//     z.appendChild(suggestion);
+//     e.appendChild(z);
     
     
    
@@ -193,7 +194,6 @@ function addNewPost(fName, lName, category, activity){
  //        node2.style.opacity = 0; 
                           
 	// });
-};
                           
 
 // function summarize() 
