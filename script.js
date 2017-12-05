@@ -156,7 +156,7 @@ function handleFormSubmit() {
     var last_name = document.getElementById("last-name").value;
     var category= document.getElementById("category").value ;
     var activity= document.getElementById("activity").value ;
-
+   
     addNewPost(first_name, last_name, category,activity);
 }
 
@@ -172,7 +172,18 @@ function addNewPost(fName, lName, category, activity){
     d.appendChild(p);
     var node2 = document.createElement("div");
     
+    var e= document.createElement("bla");
+    e.className="show";
+    var cat = document.getElementById("up");
+    cat.appendChild(e);
+    var z = document.createElement("z");
+    z.id="suggestion";
+    var suggestion=document.createTextNode(category + "" + activity);
+    z.appendChild(suggestion);
+    e.appendChild(z);
     
+    
+   
  //    node.addEventListener("mouseover", function (e){
  //        node2.style.transition = "opacity 0.5s";
  //        node2.style.opacity = 1.0;
