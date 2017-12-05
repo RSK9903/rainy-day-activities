@@ -91,115 +91,89 @@
             <h2>What is your favorite activity?</h2>
             <br>
             <form onsubmit="handleFormSubmit(); return false;">
-                <fieldset>
-                    <legend>Personal Info:</legend>
-                    <label>First name:</label>
-                        <input type="text" name="first-name" id="first" placeholder="Enter first name" required onfocus="clear_input('first')" onblur="revert('first', 'Enter first name')">
-                        <br>
-                    <label>Last name:</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Enter last name" required onfocus="clear_input('last-name')" onblur="revert('last-name', 'Enter last name')">
-                        <br>
-                        <br>
-                    <label></label>
-                </fieldset>
-                    <br>
-                <fieldset>
-                    <legend>Favorites</legend>
-                    <label>Board Games:</label>
-                        <br>
-                        <input type="checkbox" name="apples" value="Apples to Apples">
-                        <input type="" name="" value="">
-                        <input type="" name="" value="">
-                        <input type="" name="" value=""> 
-                        <input type="" name="" value="">
-                        <input type="" name="" value="">
-                        <input type="" name="" value="">
-                        <input type="" name="" value="">
-                        <input type="" name="" value="">
-                        <input type="" name="" value="">
-                    <select id = "category">
-                        <section class="category">
-                        <option>Board Games</option>
-                        <option>Card Games</option>
-                        <option>Activities</option>
-                        <option>Arts and Crafts</option>
-                        <option>Productivity</option>
-                        <option>Something New</option>
-                        </section>
-                        </select>
-                    
-                </fieldset>
-                <select id = "activity">
-                    <section class="activity"> 
-                    <optgroup label= "Board Games">
-                        <option>Apples to Apples</option>
-                        <option>Monopoly</option>
-                        <option>Clue</option>
-                        <option>Candy Land</option>
-                        <option>Scrabble</option>
-                        <option>Sorry!</option>
-                        <option>Chutes and Ladders</option>
-                        <option>The Game of Life</option>
-                        <option>Guess Who?</option>
-                        <option>Battle Ship</option>
-                    </optgroup>
-                    <optgroup label= "Card Games">
-                        <option>BS</option>
-                        <option>Go Fish</option>
-                        <option>Old Maid</option>
-                        <option>Rummy</option>
-                        <option>Solitaire</option>
-                        <option>Spades</option>
-                        <option>Spit</option>
-                        <option>War</option>
-                        <option>Black Jack</option>
-                        <option>Texam Hold'em Poker</option>
-                        <option>Uno</option>
-                    </optgroup>
-                    <optgroup label="Activities">
-                        <option>Ping Pong</option>
-                        <option>Billiards</option>
-                        <option>Badminton</option>
-                        <option>Basketball</option>
-                        <option>Swimming</option>
-                        <option>Bowling</option>
-                        <option>Boxing</option>
-                        <option>Squash</option>
-                        </optgroup>
-                    <optgroup label= "Arts and Crafts">
-                        <option>DIY Room Decor</option>
-                        <option>Drawing</option>
-                        <option>Jewelry Making</option>
-                        <option>Knitting</option>
-                        <option>Origami</option>
-                    </optgroup>
-                    <optgroup label="Productivity">
-                        <option>Clean Your Room</option>
-                        <option>Laundry</option>
-                        <option>Cooking</option>
-                        <option>Grocery Shopping</option>
-                        <option>Homework/Studying</option>
-                        <option>Homework/Studying</option>
-                        <option>Managing Finances</option>
-                    </optgroup>
-                    <optgroup label="Something New">
-                        <option>Podcasts</option>
-                        <option>Learn to Code</option>
-                        <option>Learn to Play an Instrument</option>
-                    </optgroup>
-                    </section>
-                    </select>
+                <label>First Name:</label>
+                <input type="text" name="first" id="first" placeholder="First Name">
+                <br>
+                <label>Last Name:</label>
+                <input type="text" name="last" id="last-name" placeholder="Last Name">
+                <br>
+        <select name id= "category">
+            <section class="category">
+            <option>Board Games</option>
+            <option>Card Games</option>
+            <option>Activities</option>
+            <option>Arts and Crafts</option>
+            <option>Productivity</option>
+            <option>Something New</option>
+            </section>
+            </select>
+        <select name id= "activity">
+            <section class="activity"> 
+            <optgroup label= "Board Games">
+                <option>Apples to Apples</option>
+                <option>Monopoly</option>
+                <option>Clue</option>
+                <option>Candy Land</option>
+                <option>Scrabble</option>
+                <option>Sorry!</option>
+                <option>Chutes and Ladders</option>
+                <option>The Game of Life</option>
+                <option>Guess Who?</option>
+                <option>Battle Ship</option>
+            </optgroup>
+            <optgroup label= "Card Games">
+                <option>BS</option>
+                <option>Go Fish</option>
+                <option>Old Maid</option>
+                <option>Rummy</option>
+                <option>Solitaire</option>
+                <option>Spades</option>
+                <option>Spit</option>
+                <option>War</option>
+                <option>Black Jack</option>
+                <option>Texam Hold'em Poker</option>
+                <option>Uno</option>
+            </optgroup>
+            <optgroup label="Activities">
+                <option>Ping Pong</option>
+                <option>Billiards</option>
+                <option>Badminton</option>
+                <option>Basketball</option>
+                <option>Swimming</option>
+                <option>Bowling</option>
+                <option>Boxing</option>
+                <option>Squash</option>
+                </optgroup>
+            <optgroup label= "Arts and Crafts">
+                <option>DIY Room Decor</option>
+                <option>Drawing</option>
+                <option>Jewelry Making</option>
+                <option>Knitting</option>
+                <option>Origami</option>
+            </optgroup>
+            <optgroup label="Productivity">
+                <option>Clean Your Room</option>
+                <option>Laundry</option>
+                <option>Cooking</option>
+                <option>Grocery Shopping</option>
+                <option>Homework/Studying</option>
+                <option>Homework/Studying</option>
+                <option>Managing Finances</option>
+            </optgroup>
+            <optgroup label="Something New">
+                <option>Podcasts</option>
+                <option>Learn to Code</option>
+                <option>Learn to Play an Instrument</option>
+            </optgroup>
+            </section>
+            </select>
                 <section id="reset_submit"/>
                     <input type="reset" value="Reset" onclick="reset_form()">
                     <input type="submit" value="Submit">
                 </section>
             </form>
     <div id="summary_wrapper"/>
-        <section id="summary">
-            <div>
-                <p>Sample's Favorite</p>
-            </div>
-        </section>
+        <section id="summary"></section>
     </div>
     </body>
 </html>

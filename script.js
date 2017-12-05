@@ -96,7 +96,6 @@
 	  document.getElementById("textbox").reset();
 	  document.getElementById("newActivity").style.display = "none";
 	  document.getElementById("newCategory").style.display = "none";
-
 	}
 
 	// close layer when click-out
