@@ -53,7 +53,7 @@
 	}
 
 	function submission(){
-		alert("Thank You!");
+		alert("Thank you for your suggestion!");
 		var url = window.location.pathname;
 		window.location.pathname = url.replace("form.html", "index.html");
 	}
