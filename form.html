@@ -10,31 +10,58 @@
 <body class="sugg-body">
     <main class="suggestions">
         <h1>Suggestions</h1>
-        <p>Thanks for visiting the suggestions page. Feel free to suggest new activities for already existing categories or new categories entirely.</p>
-        <form id="textbox" method="get" onsubmit="submission(); return false;">
+        <p>Thanks for visiting the suggestions page.</p>
+        <p>Feel free to suggest new activities for already existing categories or new categories entirely.</p>
+        <p>For other suggestions, please utilize the comment box.</p><br>
+        <form name="sugg-form" id="textbox" method="get" onsubmit="submission(); return false;">
         	<div class="text">
-        		<input id="first-name" type="text" name="first-name" placeholder="First name" required="true" onfocus="clear_input('first-name')" onblur="revert('first-name', 'First name')"/>
+                <label>First Name:</label>
+        		<input id="first-name" type="text" name="first-name" placeholder="First name *Required*" onfocus="clear_input('first-name')" onblur="revert('first-name', 'First name *Required*')">
         	</div>
         	<div class="text">
-        		<input id="last-name" type="text" name="last-name" placeholder="Last name" required="true" onfocus="clear_input('last-name')" onblur="revert('last-name', 'Last name')"/>
+                <label>Last Name:</label>                
+        		<input id="last-name" type="text" name="last-name" placeholder="Last name" onfocus="clear_input('last-name')" onblur="revert('last-name', 'Last name')">
         	</div>
-            <div class="radio">
-                <input type="radio" name="category_choice" value="1" onselect="existingInput(); return false;">Existing Category<br>
-                <input type="radio" name="category_choice" value="2" onclick="newInput(); return false;">New Category Suggestion
+            <br>
+            <div class="choice">
+                <input type="checkbox" name="newA" id="newA" onchange="check('newA', 'newActivity')"> I am suggesting a new activity<br>
+                <input type="checkbox" name="newC" id="newC" onchange="check('newC', 'newCategory')"> I am suggesting a new category
             </div>
-            <div class="text">
-            	<input id="category" type="text" name="category" placeholder="Category" required onfocus="clear_input('category')" onblur="revert('category', 'Category')"/>
+            <br>
+            <div id="newActivity" class="text">
+                <label>Category:</label>
+                <select id = "category">
+                    <section class="category">
+                        <option>Board Games</option>
+                        <option>Card Games</option>
+                        <option>Activities</option>
+                        <option>Arts and Crafts</option>
+                        <option>Productivity</option>
+                        <option>Something New</option>
+                    </section>
+                </select>
+                <br>
+                <label>Name of Activity:</label>
+            	<input id="activity" type="text" name="activity" placeholder="Activity Name" onfocus="clear_input('activity')" onblur="revert('activity', 'Activity Name')"> 
             </div>
-            <div class="text">
-            	<input id="activity" type="text" name="activity" placeholder="Activity" required onfocus="clear_input('activity')" onblur="revert('activity', 'Activity')"/>
+            <div id="newCategory" class="text">
+                <label>New Category:</label>
+                <input id="category" type="text" name="category" placeholder="Category Name" onfocus="clear_input('category')" onblur="revert('category', 'Category Name')">
             </div>
+            <br>
             <div class="comments">
             	<textarea id="comment" name="comment" placeholder="Comments" onfocus="clear_input('comment')" onblur="revert('comment', 'Comments')"></textarea>
             </div>
+            <br>
+            <div class="radio">
+                <input type="radio" name="robot" value="1"> I am not a robot <br>
+                <input type="radio" name="robot" value="2"> I am a robot
+            </div>
+            <br>
             <div class="button-container">
                 <input id="button" type="button" value="Back to Home" onclick="redirect()">
-                <input id="button" type="reset" value="Reset" onclick="reset_form()"/>
-                <input id="button" type="submit" value="Submit" onclick="submission()"/>
+                <input id="button" type="reset" value="Reset" onclick="reset_form()">
+                <input id="button" type="submit" value="Submit">
             </div>
         </form>
     </main>

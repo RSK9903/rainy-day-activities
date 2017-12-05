@@ -53,14 +53,34 @@
 	}
 
 	function submission(){
-		alert("Thank you for your suggestion!");
-		var url = window.location.pathname;
-		window.location.pathname = url.replace("form.html", "index.html");
+		var x = document.forms["sugg-form"]["first-name"].value;
+		var robot = document.forms["sugg-form"]["robot"];
+		if(x==""){
+			alert("Please fill out your first name.");
+			return false;
+		} else if(robot.value=="2" || (robot[0].checked==false && robot[1].checked==false)){
+			alert("Please designate that you are not a robot.");
+			return false;
+		} else {
+			alert("Thank you for your suggestion!");
+			var url = window.location.pathname;
+			window.location.pathname = url.replace("form.html", "index.html");
+		}
 	}
 
 	function redirect(){
 		var url = window.location.pathname;
 		window.location.pathname = url.replace("form", "index");
+	}
+
+	function check(id, idtwo){
+		var c = document.getElementById(id);
+		var d = document.getElementById(idtwo);
+		if(c.checked){
+			d.style.display="inline";
+		} else {
+			d.style.display="none";
+		}
 	}
 
 	// var submit = document.getElementById('button');
@@ -74,6 +94,9 @@
 	{
 	  //reset form
 	  document.getElementById("textbox").reset();
+	  document.getElementById("newActivity").style.display = "none";
+	  document.getElementById("newCategory").style.display = "none";
+
 	}
 
 	// close layer when click-out
@@ -129,49 +152,45 @@
 	//   }
 
 	// }
-// function handleFormSubmit() {
-//     if (window.event) window.event.preventDefault();
+function handleFormSubmit() {
+    var first_name = document.getElementById("first").value;
+    var last_name = document.getElementById("last-name").value;
+    var category= document.getElementById("category").value ;
+    var activity= document.getElementById("activity").value ;
 
-//     var category= document.getElementById("category").value ;
-//     var activity= document.getElementById("activity").value ;
+    addNewPost(first_name, last_name, category,activity);
+}
 
-//     addNewPost(category,activity);
-// }
-
-// function addNewPost(category, activity){       
-//     var node = document.createElement("DIV");
-//     var node2 = document.createElement("DIV");
-//     var span= document.createElement("span");
-//  node.className="upload";
-//     node2.id="post";
-//     node2.innerText=activity;
-//     span.innerText=category;
-//     node.appendChild(span);
-//     node.appendChild(node);
-//     node.appendChild(node2);
-//     document.getElementById("post").appendChild(node);
+function addNewPost(fName, lName, category, activity){     
+    var d = document.createElement("div");
+    d.className="post";
+    var sec = document.getElementById("summary");
+    sec.appendChild(d);
+    var p = document.createElement("p");
+    p.id="name";
+    var name = document.createTextNode(fName + " " + lName);
+    p.appendChild(name);
+    d.appendChild(p);
+    var node2 = document.createElement("div");
     
     
-//     node.addEventListener("mouseover", function (e){
-//         node2.style.transition = "opacity 0.5s";
-//         node2.style.opacity = 1.0;
-// });
-//     node.addEventListener("mouseout", function (e) {
-//         node2.style.transition = "opacity 0.5s";
-//         node2.style.opacity = 0; 
+ //    node.addEventListener("mouseover", function (e){
+ //        node2.style.transition = "opacity 0.5s";
+ //        node2.style.opacity = 1.0;
+	// });
+ //    node.addEventListener("mouseout", function (e) {
+ //        node2.style.transition = "opacity 0.5s";
+ //        node2.style.opacity = 0; 
                           
-// });
-
-
-                          
-// });
+	// });
+};
                           
 
 // function summarize() 
 // {
-// .fan-favorites.get
+// 	.fan-favorites.get;
 
-// .summary_wrapper.display
+// 	.summary_wrapper.display;
  
 // }
 
@@ -180,12 +199,4 @@
 //   //reset form
 // }
 
-	// Create the parent post div
-	// Create a span for the user
-	// Create image element
-	// Create overlay element
-	// Add all child elements (order matters)
-	// Add event listeners to post
-	// Add post element to post list
-//}
-//var node= document.createElement("post");
+// var node= document.createElement("post");
