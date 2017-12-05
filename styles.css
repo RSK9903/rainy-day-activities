@@ -46,10 +46,9 @@ header .nav-links li>a:hover {
     transition: all 0.2s ease-out;*/
 }
 
-#drop li{
+#drop li {
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 #drop div {
@@ -64,7 +63,7 @@ header .nav-links li>a:hover {
     box-shadow: 3px 3px 15px 1px grey;
 }
 
-#drop div a {
+#drop div a{
     display: flex;
     padding: 5px 10px;
     width: auto;
@@ -1147,6 +1146,32 @@ body {
         width: 100px;
     }
 
+
+    #mobile {
+        display: inline;
+        background-color: white;
+        border: white solid 1px;
+        border-radius: 20%;
+        padding: 0;
+    }
+
+    #cloud {
+        display:inline;
+    }
+
+    #cloud img {
+        height:25px;
+        width: auto;
+    }
+
+    #mobile img{
+        height:23px;
+        width: 23px;
+    }
+
+    #other{
+        display:none;
+    }
 
     /************* CSS for mobile footer *************/
     footer .foot-nav li a {
