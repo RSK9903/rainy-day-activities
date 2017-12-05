@@ -1173,6 +1173,10 @@ body {
         width: 23px;
     }
 
+    #test {
+        display: none;
+    }
+
     #other{
         display:none;
     }
@@ -1303,8 +1307,6 @@ body {
 
     .CardGames nav-links{
          flex-direction:row;
-
-
     }
     .CardGames section > div {
         font-size: 10px;
